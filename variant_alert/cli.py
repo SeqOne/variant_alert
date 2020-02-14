@@ -20,17 +20,18 @@ pass_variant_alert_params = click.make_pass_decorator(VariantAlertParams, ensure
     "--output_directory",
     "-o",
     "output_directory",
-    help="Output directory of variant comparison file. Default current path + "
-    "clinvar_gene_diff_from_$release-source_to _$release-target.txt",
+    help="Output directory of variant comparison file. Default current working directory",
     type=click.Path(
         exists=False, file_okay=True, dir_okay=True, writable=True, readable=True
     ),
-    default=os.getcwd()
+    default=os.getcwd(),
 )
 @click.argument("vcf_source_path")
 @click.argument("vcf_target_path")
 @pass_variant_alert_params
-def variant_alert(variant_alert_params, output_directory, vcf_source_path, vcf_target_path):
+def variant_alert(
+    variant_alert_params, output_directory, vcf_source_path, vcf_target_path
+):
     """
     CLI for variant_alert package.
 
@@ -53,7 +54,7 @@ def variant_alert(variant_alert_params, output_directory, vcf_source_path, vcf_t
     "output_format",
     help="Format of output file, either tsv or vcf. Default = tsv",
     type=click.Choice(["tsv", "vcf"]),
-    default="tsv"
+    default="tsv",
 )
 @pass_variant_alert_params
 def compare_variant(variant_alert_params, output_format):
@@ -66,9 +67,13 @@ def compare_variant(variant_alert_params, output_format):
     logger.info("...... comparing variants")
     compared_variants, has_lost_variants = clinvar_vcf_comparator.compare_variants()
     if has_lost_variants:
-        logger.warning("Your new version of clinvar is missing variants from your source file")
+        logger.warning(
+            "Your new version of clinvar is missing variants from your source file"
+        )
     logger.info(f"...... writing output to directory {output_directory}")
-    clinvar_vcf_comparator.write_variant_comparison(compared_variants, output_directory, output_format)
+    clinvar_vcf_comparator.write_variant_comparison(
+        compared_variants, output_directory, output_format
+    )
     logger.info("... done")
 
 
