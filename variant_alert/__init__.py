@@ -10,5 +10,5 @@ class VariantAlertParams(object):
     """
 
     def __init__(self):
-        self.clinvar_vcf_comparator = ''
-        self.output_directory = ''
+        self.clinvar_vcf_comparator = ""
+        self.output_directory = ""
