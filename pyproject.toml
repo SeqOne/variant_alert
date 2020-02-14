@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "variant_alert"
+version = "0.1.0"
+description = "Compare two clinvar VCF version and output differences of classification between gene and variants. Can also generate a clinvarome file."
+authors = [
+  "Mélanie Broutin <melanie.broutin@seqone.fr>",
+  "Abdoulaye Diallo <abdoulaye.diallo@seqone.fr>",
+  "Raphaël Lanos <raphael.lanos@seqone.fr>",
+  "Kévin Yauy <kevin.yauy@seqone.fr>"
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+pysam = "=0.15.3"
+click = "^7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.3"
+pytest-cov = "^2.8"
+flake8 = "^3.7"
+black = {version = "^18.3-alpha.0", allows-prereleases = true}
+
+[tool.poetry.scripts]
+#clinvar-ftp = "ftp.cli:clinvar_ftp"
+variant-alert = "variant_alert.cli:variant_alert"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
