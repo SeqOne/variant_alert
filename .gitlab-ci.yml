@@ -1,0 +1,63 @@
+variables:
+  IMAGE_NAME: $CI_REGISTRY_IMAGE
+
+include:
+  - project: "devops/gitlab-ci-template"
+    file: "/release.gitlab-ci.yml"
+  - project: "devops/gitlab-ci-template"
+    file: "/ssh-key.gitlab-ci.yml"
+  - project: "devops/gitlab-ci-template"
+    file: "/docker.gitlab-ci.yml"
+
+stages:
+  - test
+  - release
+  - delivery_dev
+  - delivery_staging
+  - delivery_prod
+
+.delivery:
+  extends: .docker
+  tags:
+    - docker-in-docker
+  only:
+    - tags
+
+test:
+  image: python:3.6-stretch
+  stage: test
+  script:
+    - pip install poetry
+    - poetry install
+    - poetry run flake8
+    - poetry run pytest -v --cov-report xml:cov.xml --cov-report term --junit-xml coverage.xml --cov=src/ tests/
+  coverage: '/TOTAL                        \d+     \d+    (\d+%)/'
+  artifacts:
+    reports:
+      junit: coverage.xml
+  tags:
+    - docker-executor
+
+release:
+  extends: .release
+
+delivery_dev:
+  extends: .build and delivery
+  stage: delivery_dev
+  environment:
+    name: "$ENV_TAG"
+  variables:
+    ENV_TAG: dev
+    DOCKER_BUILD_ARGS: --build-arg PRIVATE_CI_ACCESS_TOKEN="$PRIVATE_CI_ACCESS_TOKEN"
+
+delivery_staging:
+  extends: .tag and delivery
+  stage: delivery_staging
+  variables:
+    ENV_TAG: staging
+
+delivery_prod:
+  extends: .tag and delivery
+  stage: delivery_prod
+  variables:
+    ENV_TAG: prod
