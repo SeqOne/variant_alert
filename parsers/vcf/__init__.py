@@ -202,7 +202,6 @@ class VCFParser(object):
                 if self.reference:
                     raise MalformedVCFError("VCF reference file has already been set")
                 else:
-                    self.logger.debug(f"{header.value}")
                     self.reference = re.search(
                         r"(?P<genome>(GRCh|hg)\d+)", header.value
                     ).group("genome")
