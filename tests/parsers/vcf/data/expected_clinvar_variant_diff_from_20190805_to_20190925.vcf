@@ -1,6 +1,6 @@
 ##fileformat=VCFv4.1
 ##FILTER=<ID=PASS,Description="All filters passed">
-##fileDate=2019-09-15
+##fileDate=2019-09-25
 ##source=ClinVar
 ##reference=GRCh37
 ##ID=<Description="ClinVar Variation ID">
@@ -57,10 +57,12 @@
 ##INFO=<ID=CLNGENE,Number=.,Type=String,Description="Retained gene to describe clinical significance">
 ##INFO=<ID=CLNGENEID,Number=.,Type=String,Description="Retained gened id to describe clinical significance">
 ##clinvar_source_release=20190805
-##clinvar_target_release=20190915
+##clinvar_target_release=20190925
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
 1	949422	475282	G	A	.	.	AF_ESP=0.00546;AF_EXAC=0.00165;AF_TGP=0.00619;ALLELEID=446939;CLNDISDB=MedGen:C4015293,OMIM:616126,Orphanet:ORPHA319563;CLNDN=Immunodeficiency_38_with_basal_ganglia_calcification;CLNHGVS=NC_000001.10:g.949422G>A;CLNREVSTAT=criteria_provided,_single_submitter;CLNSIG=Pathogenic;CLNVC=single_nucleotide_variant;CLNVCSO=SO:0001483;GENEINFO=ISG15:9636;MC=SO:0001583|missense_variant;ORIGIN=1;RS=143888043;CLNSRCSIG=..;CLNTGTSIG=Pathogenic;CLNBRKCHANGE=major;CLNGENE=ISG15;CLNGENEID=9636
-3	37056026	183381	C	T	.	.	ALLELEID=181485;CLNDISDB=MedGen:C4015293,OMIM:616126,Orphanet:ORPHA319563;CLNDN=Immunodeficiency_38_with_basal_ganglia_calcification;CLNHGVS=NC_000001.10:g.949523C>T;CLNREVSTAT=no_assertion_criteria_provided;CLNSIG=Benign;CLNVC=single_nucleotide_variant;CLNVCSO=SO:0001483;CLNVI=OMIM_Allelic_Variant:147571.0003;GENEINFO=MLH1:8636;MC=SO:0001587|nonsense;ORIGIN=1;RS=786201005;CLNSRCSIG=Pathogenic;CLNTGTSIG=Benign;CLNBRKCHANGE=major;CLNGENE=MLH1;CLNGENEID=8636
+3	37056026	183381	C	T	.	.	ALLELEID=181485;CLNDISDB=MedGen:C4015293,OMIM:616126,Orphanet:ORPHA319563;CLNDN=Immunodeficiency_38_with_basal_ganglia_calcification;CLNHGVS=NC_000001.10:g.949523C>T;CLNREVSTAT=no_assertion_criteria_provided;CLNSIG=Benign;CLNVC=single_nucleotide_variant;CLNVCSO=SO:0001483;CLNVI=OMIM_Allelic_Variant:147571.0003;GENEINFO=ISG15:9636;MC=SO:0001587|nonsense;ORIGIN=1;RS=786201005;CLNSRCSIG=Pathogenic;CLNTGTSIG=Benign;CLNBRKCHANGE=major;CLNGENE=ISG15;CLNGENEID=9636
 3	50416389	542075	C	T	.	.	ALLELEID=514896;CLNDISDB=MedGen:C4015293,OMIM:616126,Orphanet:ORPHA319563;CLNDN=Immunodeficiency_38_with_basal_ganglia_calcification;CLNHGVS=NC_000001.10:g.949559C>T;CLNREVSTAT=criteria_provided,_single_submitter;CLNSIG=Likely_pathogenic;CLNVC=single_nucleotide_variant;CLNVCSO=SO:0001483;GENEINFO=ISG15:9636;MC=SO:0001583|missense_variant;ORIGIN=1;RS=1553169766;CLNSRCSIG=Uncertain_significance;CLNTGTSIG=Likely_pathogenic;CLNBRKCHANGE=major;CLNGENE=ISG15;CLNGENEID=9636
 4	84383745	128215	T	TC	.	.	AF_EXAC=9e-05;ALLELEID=133672;CLNDISDB=MedGen:C0027672,SNOMED_CT:699346009|MedGen:CN517202;CLNDN=Hereditary_cancer-predisposing_syndrome|not_provided;CLNHGVS=NC_000004.11:g.84383746dup;CLNREVSTAT=criteria_provided,_multiple_submitters,_no_conflicts;CLNSIG=Pathogenic;CLNVC=Duplication;CLNVCSO=SO:1000035;GENEINFO=ABRAXAS1:84142;MC=SO:0001589|frameshift_variant;ORIGIN=1;RS=587780262;CLNSRCSIG=Benign;CLNTGTSIG=Pathogenic;CLNBRKCHANGE=major;CLNGENE=ABRAXAS1;CLNGENEID=84142
 6	150655494	475278	C	T	.	.	AF_ESP=0.00515;AF_EXAC=0.00831;AF_TGP=0.00339;ALLELEID=446987;CLNDISDB=MedGen:C4015293,OMIM:616126,Orphanet:ORPHA319563;CLNDN=Immunodeficiency_38_with_basal_ganglia_calcification;CLNHGVS=NC_000001.10:g.949597C>T;CLNREVSTAT=criteria_provided,_single_submitter;CLNSIG=Uncertain_significance;CLNVC=single_nucleotide_variant;CLNVCSO=SO:0001483;GENEINFO=ISG15:9636;MC=SO:0001819|synonymous_variant;ORIGIN=1;RS=61766284;CLNSRCSIG=Benign;CLNTGTSIG=Uncertain_significance;CLNBRKCHANGE=unknown;CLNGENE=ISG15;CLNGENEID=9636
+X	153296172	402986	G	A	.	.	AF_ESP=0.40158;AF_EXAC=0.37025;AF_TGP=0.33886;ALLELEID=389314;CLNDISDB=MedGen:CN169374;CLNDN=not_specified;CLNHGVS=NC_000001.10:g.949608G>A;CLNREVSTAT=criteria_provided,_single_submitter;CLNSIG=Benign;CLNVC=single_nucleotide_variant;CLNVCSO=SO:0001483;GENEINFO=ISG15:9636;MC=SO:0001583|missense_variant;ORIGIN=1;RS=1921;CLNSRCSIG=Benign;CLNTGTSIG=..;CLNBRKCHANGE=warning;CLNGENE=ISG15;CLNGENEID=9636
+X	153296290	571208	G	A	.	.	ALLELEID=556509;CLNDISDB=MedGen:C4015293,OMIM:616126,Orphanet:ORPHA319563;CLNDN=Immunodeficiency_38_with_basal_ganglia_calcification;CLNHGVS=NC_000001.10:g.949635G>A;CLNREVSTAT=criteria_provided,_single_submitter;CLNSIG=Uncertain_significance;CLNVC=single_nucleotide_variant;CLNVCSO=SO:0001483;GENEINFO=ISG15:9636;MC=SO:0001583|missense_variant;ORIGIN=1;CLNSRCSIG=Uncertain_significance;CLNTGTSIG=..;CLNBRKCHANGE=warning;CLNGENE=ISG15;CLNGENEID=9636

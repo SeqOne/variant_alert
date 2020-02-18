@@ -1,0 +1,8 @@
+variant_id	clinvar_id	old_classification	new_classification	breaking_change	confidence	gene_info	gene_info_id	name_clinvar_old	name_clinvar_new
+GRCh37_1_949422_G_A	475282	..	Pathogenic	major	criteria_provided,_single_submitter	ISG15	9636	20190805	20190925
+GRCh37_3_37056026_C_T	183381	Pathogenic	Benign	major	no_assertion_criteria_provided	ISG15	9636	20190805	20190925
+GRCh37_3_50416389_C_T	542075	Uncertain_significance	Likely_pathogenic	major	criteria_provided,_single_submitter	ISG15	9636	20190805	20190925
+GRCh37_6_150655494_C_T	475278	Benign	Uncertain_significance	unknown	criteria_provided,_single_submitter	ISG15	9636	20190805	20190925
+GRCh37_4_84383745_T_TC	128215	Benign	Pathogenic	major	criteria_provided,_multiple_submitters,_no_conflicts	ABRAXAS1	84142	20190805	20190925
+GRCh37_X_153296172_G_A	402986	Benign	..	warning	criteria_provided,_single_submitter	ISG15	9636	20190805	20190925
+GRCh37_X_153296290_G_A	571208	Uncertain_significance	..	warning	criteria_provided,_single_submitter	ISG15	9636	20190805	20190925

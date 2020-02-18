@@ -5,7 +5,6 @@
 import csv
 import os
 import re
-from typing import List, Dict
 
 import pysam
 
@@ -446,6 +445,7 @@ class ClinvarVCFComparator(object):
             review_confidence_new = target_pathogenic_genes[gene_key]["best_conf"][
                 "conf"
             ]
+
             # Select the highest ACMG classification status
             if (
                 source_pathogenic_genes[gene_key]["best_clnsig"]["patho_rank"]
@@ -462,6 +462,7 @@ class ClinvarVCFComparator(object):
                 < target_pathogenic_genes[gene_key]["best_clnsig"]["patho_rank"]
             ):
                 pathogenic_class_status = "UPGRADED_PATHOGENICITY_STATUS"
+
             # Select the highest review confidence status
             if (
                 source_pathogenic_genes[gene_key]["best_conf"]["conf_rank"]
@@ -581,11 +582,17 @@ class ClinvarVCFComparator(object):
         )
 
         output_header = self.target_vcf.vcf_file.header
+        source_header = (
+            self.source_vcf.vcf_file.header
+        )  # Only necessary to use variant record object properly
+
         for header in headers:
             output_header.add_line(header)
+            source_header.add_line(header)
 
         output_vcf = pysam.VariantFile(output, mode="w", header=output_header)
 
+        variant_record_dict = {}
         for variant_record in self.target_vcf.vcf_file.fetch():
             variant_id = self.target_vcf.set_genome_variant_id(
                 self.target_vcf.reference,
@@ -594,32 +601,33 @@ class ClinvarVCFComparator(object):
                 variant_record.ref,
                 variant_record.alts[0],
             )
-            variant = self.get_variant_from_comparison_result(
-                variant_id, variant_comparison_result
+            variant_record_dict.setdefault(variant_id, variant_record.copy())
+
+        for variant_record in self.source_vcf.vcf_file.fetch():
+            variant_id = self.source_vcf.set_genome_variant_id(
+                self.source_vcf.reference,
+                variant_record.chrom,
+                variant_record.pos,
+                variant_record.ref,
+                variant_record.alts[0],
             )
-            if variant:
+            variant_record_dict.setdefault(variant_id, variant_record.copy())
+        for compared_variant in variant_comparison_result:
+            variant_record = variant_record_dict.get(
+                compared_variant["variant_id"], None
+            )
+            if variant_record:
                 variant_record.info.update(
                     {
-                        "CLNSRCSIG": variant["old_classification"],
-                        "CLNTGTSIG": variant["new_classification"],
-                        "CLNBRKCHANGE": variant["breaking_change"],
-                        "CLNGENE": variant["gene_info"],
-                        "CLNGENEID": variant["gene_info_id"],
+                        "CLNSRCSIG": compared_variant["old_classification"],
+                        "CLNTGTSIG": compared_variant["new_classification"],
+                        "CLNBRKCHANGE": compared_variant["breaking_change"],
+                        "CLNGENE": compared_variant["gene_info"],
+                        "CLNGENEID": compared_variant["gene_info_id"],
                     }
                 )
                 output_vcf.write(variant_record)
-
-    @staticmethod
-    def get_variant_from_comparison_result(
-        variant_id: str, variant_comparison_result: List[Dict[str, str]]
-    ):
-        for compared_variant in variant_comparison_result:
-            if compared_variant["variant_id"] == variant_id:
-                return compared_variant
-            else:
-                continue
-        else:
-            return None
+        output_vcf.close()
 
     def write_gene_comparison(
         self, gene_comparison_result: list, output_directory: str = os.getcwd()
