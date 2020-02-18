@@ -40,7 +40,7 @@ poetry install
 
 We recommend to use a VCF processed from Clinvcf, as VCF from ClinVar repository is not complete.
 
-Clinvcf extract all variants from the monthly XML release of ClinVar into a VCF format (https://github.com/SeqOne/clinvcf).
+Clinvcf extract all variants from the monthly XML release of ClinVar into a VCF format (https://github.com/SeqOne/clinvcf) (soon to be pushed).
 
 ## Run
 
@@ -65,7 +65,6 @@ Commands:
   compare-variant  Output variants with change of pathogenicity
 ```
 
-NB : you will also need to give 2 vcf in arguments for the clinvarome function, even if it will only use the lastest.
 ## Glossary
 
 ### Significant changes  
@@ -94,20 +93,15 @@ NB : you will also need to give 2 vcf in arguments for the clinvarome function, 
 | Pathogenic                                                             	| Uncertain_significance or Conflicting_interpretations_of_pathogenicity 	| major           	|
 | Pathogenic                                                             	| Likely_pathogenic                                                      	| minor           	|
 
-### Variant reclassification rules
 
-According to the 1.5 * IQR method, we remove outliers soumissions and reclassify conflicting status variants according to ClinVar policies.
+## Troubleshooting
 
-We apply a 3-level star metrics according to our reclassfication confidence. 4 or more submission is needed.
-
-We only reclassify variants from `conflicting` status to `likely pathogenic` or `pathogenic` status.
-
->- 1 star : default
->- 2 stars : reclassification remains even if we add a virtual VUS submission
->- 3 stars : 2 stars requirements and at least 1 pathogenic classification
+- *Clinvarome*: you will also need to give 2 vcf in arguments for the clinvarome function, even if it will only use the lastest.
+- *vcf output*: tsv output will take only few seconds, but print a VCF output could take 10 minutes. This option is only available for the compare-variant function.
 
 --------------------------------------------------------------------------------
 *Variant Alert! is a collaboration of :* 
+
 [![SeqOne](img/logo-seqone.png)](https://seq.one/) 
 
 [![Université Grenoble Alpes](img/logo-uga.png)](https://iab.univ-grenoble-alpes.fr/) 
