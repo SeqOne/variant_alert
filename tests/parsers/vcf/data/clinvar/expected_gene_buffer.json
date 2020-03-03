@@ -1,0 +1,62 @@
+{
+  "9636": {
+    "best_review": {
+      "review": "no_assertion_criteria_provided",
+      "review_rank": 0,
+      "clnsig_rank": 5,
+      "clnsig": "Pathogenic"
+    },
+    "best_clnsig": {
+      "review": "no_assertion_criteria_provided",
+      "review_rank": 0,
+      "clnsig_rank": 5,
+      "clnsig": "Pathogenic"
+    },
+    "gene": "ISG15"
+  },
+  "375790": {
+    "best_review": {
+      "review": "criteria_provided,_single_submitter",
+      "review_rank": 1,
+      "clnsig_rank": 5,
+      "clnsig": "Pathogenic"
+    },
+    "best_clnsig": {
+      "review": "criteria_provided,_single_submitter",
+      "review_rank": 1,
+      "clnsig_rank": 5,
+      "clnsig": "Pathogenic"
+    },
+    "gene": "AGRN"
+  },
+  "23400": {
+    "best_review": {
+      "review": "criteria_provided,_multiple_submitters,_no_conflicts",
+      "review_rank": 2,
+      "clnsig_rank": 4,
+      "clnsig": "Likely_pathogenic"
+    },
+    "best_clnsig": {
+      "review": "criteria_provided,_multiple_submitters,_no_conflicts",
+      "review_rank": 2,
+      "clnsig_rank": 4,
+      "clnsig": "Likely_pathogenic"
+    },
+    "gene": "ATP13A2"
+  },
+  "4595": {
+    "best_review": {
+      "review": "criteria_provided,_multiple_submitters,_no_conflicts",
+      "review_rank": 2,
+      "clnsig_rank": 5,
+      "clnsig": "Pathogenic"
+    },
+    "best_clnsig": {
+      "review": "criteria_provided,_multiple_submitters,_no_conflicts",
+      "review_rank": 2,
+      "clnsig_rank": 5,
+      "clnsig": "Pathogenic"
+    },
+    "gene": "MUTYH"
+  }
+}

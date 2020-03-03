@@ -1,0 +1,7 @@
+gene_info_id	gene_info	pathogenic_class_status	pathogenic_class_old	pathogenic_class_best_review_confidence_old	pathogenic_class_new	pathogenic_class_best_review_confidence_new	review_confidence_status	review_confidence_best_pathogenic_class_old	review_confidence_old	review_confidence_best_pathogenic_class_new	review_confidence_new	name_clinvar_old	name_clinvar_new
+9636	ISG15	LOST_PATHOGENICITY	Pathogenic	no_assertion_criteria_provided	..	..	NO_REVIEW	Pathogenic	no_assertion_criteria_provided	..	..	20190805	20190915
+84142	ABRAXAS1	NEW_PATHOGENICITY	..	..	Pathogenic	criteria_provided,_multiple_submitters,_no_conflicts	NEW_REVIEW	..	..	Pathogenic	criteria_provided,_multiple_submitters,_no_conflicts	20190805	20190915
+4595	MUTYH	NEW_PATHOGENICITY	..	..	Pathogenic	criteria_provided,_multiple_submitters,_no_conflicts	NEW_REVIEW	..	..	Pathogenic	criteria_provided,_multiple_submitters,_no_conflicts	20190805	20190915
+4436	MSH2	NEW_PATHOGENICITY	..	..	Pathogenic	reviewed_by_expert_panel	NEW_REVIEW	..	..	Pathogenic	reviewed_by_expert_panel	20190805	20190915
+3897	L1CAM	NEW_PATHOGENICITY	..	..	Pathogenic	no_assertion_criteria_provided	NEW_REVIEW	..	..	Pathogenic	no_assertion_criteria_provided	20190805	20190915
+4292	MLH1	UNCHANGED	Pathogenic	criteria_provided,_conflicting_interpretations	Pathogenic	reviewed_by_expert_panel	UPGRADED_REVIEW_CONFIDENCE	Pathogenic	criteria_provided,_conflicting_interpretations	Pathogenic	reviewed_by_expert_panel	20190805	20190915

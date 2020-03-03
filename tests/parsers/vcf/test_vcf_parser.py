@@ -9,9 +9,11 @@ from tests import TEST_DIR
 class VCFParserTestCase(unittest.TestCase):
     def setUp(self) -> None:
         self.vcf_with_caller = os.path.join(
-            TEST_DIR, "parsers/vcf/data/toy_withcaller.vcf.gz"
+            TEST_DIR, "parsers/vcf/data/raw/toy_withcaller.vcf.gz"
         )
-        self.vcf_without_caller = os.path.join(TEST_DIR, "parsers/vcf/data/toy.vcf.gz")
+        self.vcf_without_caller = os.path.join(
+            TEST_DIR, "parsers/vcf/data/raw/toy.vcf.gz"
+        )
 
     def test_vcf_parser(self):
         vcf_parser = VCFParser(self.vcf_without_caller)
@@ -28,11 +30,13 @@ class VCFParserTestCase(unittest.TestCase):
         )
 
         first_variant = next(vcf_parser.vcf_file.fetch())
-        self.assertEqual("10", first_variant.chrom)
-        self.assertEqual(123247554, first_variant.pos)
+        self.assertEqual("1", first_variant.chrom)
+        self.assertEqual(2340056, first_variant.pos)
         self.assertEqual("C", first_variant.ref)
-        self.assertEqual("G", first_variant.alts[0])
-        self.assertEqual(("Likely_pathogenic",), first_variant.info.get("CLNSIG"))
+        self.assertEqual("T", first_variant.alts[0])
+        self.assertEqual(
+            ("Benign/Likely_benign", "_other"), first_variant.info.get("CLNSIG")
+        )
 
         sample_name, format_fields = first_variant.samples.items()[0]
         self.assertEqual("e83f121a-ad81-4c2f-acc7-eaf050659cf5", sample_name)
@@ -446,11 +450,26 @@ class VCFParserTestCase(unittest.TestCase):
                 "ref": "C",
                 "alt": "T",
             },
+            "GRCh37_1_161599571_T_.": {
+                "chrom": "1",
+                "pos": 161599571,
+                "id": "36924",
+                "ref": "T",
+                "alt": ".",
+            },
+            "GRCh37_2_238247758_CACCTAAAGAAAAAAA_.": {
+                "chrom": "2",
+                "pos": 238247758,
+                "id": "504370",
+                "ref": "CACCTAAAGAAAAAAA",
+                "alt": ".",
+            },
         }
 
         variant_buffer = vcf_parser.get_variant_buffer(
             ["CHROM", "POS", "ID", "REF", "ALT"]
         )
+
         self.assertCountEqual(expected_variant_buffer, variant_buffer)
 
         variant_buffer_with_no_input_fields = vcf_parser.get_variant_buffer()
