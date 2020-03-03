@@ -40,7 +40,7 @@ poetry install
 
 We recommend to use a VCF processed from Clinvcf, as VCF from ClinVar repository is not complete.
 
-Clinvcf extract all variants from the monthly XML release of ClinVar into a VCF format (https://github.com/SeqOne/clinvcf) (soon to be pushed).
+Clinvcf extract all variants from the monthly XML release of ClinVar into a VCF format (https://github.com/SeqOne/clinvcf).
 
 ## Run
 

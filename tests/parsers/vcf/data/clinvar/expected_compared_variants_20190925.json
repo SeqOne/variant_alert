@@ -1,0 +1,80 @@
+[
+  {
+    "variant_id": "GRCh37_1_949523_C_T",
+    "clinvar_id": "183381",
+    "old_classification": "Pathogenic",
+    "new_classification": "Benign",
+    "breaking_change": "major",
+    "confidence": "reviewed_by_expert_panel",
+    "reclassification_status": null,
+    "gene_info": "ISG15",
+    "gene_info_id": "9636",
+    "name_clinvar_old": "20190805",
+    "name_clinvar_new": "20190925"
+  },
+  {
+    "variant_id": "GRCh37_1_949851_G_C",
+    "clinvar_id": "475282",
+    "old_classification": "..",
+    "new_classification": "Likely_benign",
+    "breaking_change": "null",
+    "confidence": "criteria_provided,_single_submitter",
+    "reclassification_status": null,
+    "gene_info": "ISG15",
+    "gene_info_id": "9636",
+    "name_clinvar_old": "20190805",
+    "name_clinvar_new": "20190925"
+  },
+  {
+    "variant_id": "GRCh37_1_45797835_T_G",
+    "clinvar_id": "135992",
+    "old_classification": "Conflicting_interpretations_of_pathogenicity",
+    "new_classification": "Pathogenic",
+    "breaking_change": "major",
+    "confidence": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "reclassification_status": 3,
+    "gene_info": "MUTYH",
+    "gene_info_id": "4595",
+    "name_clinvar_old": "20190805",
+    "name_clinvar_new": "20190925"
+  },
+  {
+    "variant_id": "GRCh37_2_47641560_A_T",
+    "clinvar_id": "36580",
+    "old_classification": "Conflicting_interpretations_of_pathogenicity",
+    "new_classification": "Pathogenic",
+    "breaking_change": "major",
+    "confidence": "reviewed_by_expert_panel",
+    "reclassification_status": null,
+    "gene_info": "MSH2",
+    "gene_info_id": "4436",
+    "name_clinvar_old": "20190805",
+    "name_clinvar_new": "20190925"
+  },
+  {
+    "variant_id": "GRCh37_4_84383745_T_TC",
+    "clinvar_id": "128215",
+    "old_classification": "Uncertain_significance",
+    "new_classification": "Pathogenic",
+    "breaking_change": "major",
+    "confidence": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "reclassification_status": null,
+    "gene_info": "ABRAXAS1",
+    "gene_info_id": "84142",
+    "name_clinvar_old": "20190805",
+    "name_clinvar_new": "20190925"
+  },
+  {
+    "variant_id": "GRCh37_X_153138030_C_T",
+    "clinvar_id": "92921",
+    "old_classification": "Benign",
+    "new_classification": "..",
+    "breaking_change": "warning",
+    "confidence": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "reclassification_status": null,
+    "gene_info": "L1CAM",
+    "gene_info_id": "3897",
+    "name_clinvar_old": "20190805",
+    "name_clinvar_new": "20190925"
+  }
+]

@@ -69,7 +69,11 @@ class VCFParser(object):
 
     @staticmethod
     def _get_variant_record_alt(variant_record):
-        return {"alt": variant_record.alts[0]}
+        if variant_record.alts is None:
+            alt = "."
+        else:
+            alt = variant_record.alts[0]
+        return {"alt": alt}
 
     @staticmethod
     def set_genome_variant_id(
@@ -120,7 +124,7 @@ class VCFParser(object):
         # Fields are of type FIELD_NAME=(a|b|c|d|e,a|h|k|d|u)
         try:
             annot_subvalue_lists = []
-            for annot_subvalue_list in annot_field_value:
+            for annot_subvalue_list in annot_field_value:  # Pysam set it as a tuple
                 if annot_subvalue_list is None:
                     self.logger.warning(
                         "Found allele variant annotations with a comma seperating nothing "
@@ -216,42 +220,42 @@ class VCFParser(object):
     def get_variant_buffer(self, fields: List[str] = None):
         variants = {}
         for variant_record in self.vcf_file.fetch():
-            if len(variant_record.alts) > 1:
+            if variant_record.alts is None:
+                alt = "."
+            elif len(variant_record.alts) > 1:
                 raise ValueError(
                     f"Variant buffer generation does not currently support {self.vcf_type_name} file"
                     " with multi-allelic alts on a same line."
                 )
-            elif variant_record.alts is None:
-                raise ValueError(
-                    f"{self.vcf_type_name} file is not supposed to have empty alt allele."
-                )
             else:
-                variant_annotations = {}
-                # by default, use all available fields
-                if fields is None:
-                    fields = self.get_field_values.keys()
-                for field in fields:
-                    try:
-                        variant_annotations.update(
-                            self.get_field_values[field](variant_record)
-                        )
-                    # If one of the given fields does not exists log an explicit message and re-raise
-                    except KeyError:
-                        self.logger.exception(
-                            "given field {} is not available. Either choose one of the available ones "
-                            "or implement your field. Available fields: \n {}".format(
-                                field, "\n".join(self.get_field_values.keys())
-                            )
-                        )
-                        raise
-                variants[
-                    self.set_genome_variant_id(
-                        self.reference,
-                        variant_record.chrom,
-                        variant_record.pos,
-                        variant_record.ref,
-                        variant_record.alts[0],
+                alt = variant_record.alts[0]
+
+            variant_annotations = {}
+            # by default, use all available fields
+            if fields is None:
+                fields = self.get_field_values.keys()
+            for field in fields:
+                try:
+                    variant_annotations.update(
+                        self.get_field_values[field](variant_record)
                     )
-                ] = variant_annotations
+                # If one of the given fields does not exists log an explicit message and re-raise
+                except KeyError:
+                    self.logger.exception(
+                        "given field {} is not available. Either choose one of the available ones "
+                        "or implement your field. Available fields: \n {}".format(
+                            field, "\n".join(self.get_field_values.keys())
+                        )
+                    )
+                    raise
+            variants[
+                self.set_genome_variant_id(
+                    self.reference,
+                    variant_record.chrom,
+                    variant_record.pos,
+                    variant_record.ref,
+                    alt,
+                )
+            ] = variant_annotations
 
         return variants

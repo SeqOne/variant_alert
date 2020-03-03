@@ -14,7 +14,7 @@ from const.clinvar import (
     CLINVAR_PATHO_STATUS_RANK,
 )
 from logger import logger
-from parsers.vcf import VCFParser
+from parsers.vcf import VCFParser, MalformedVCFError
 
 
 class ClinVarComparisonError(Exception):
@@ -33,11 +33,16 @@ class ClinvarVCFParser(VCFParser):
                 "ALLELEID": self._get_variant_record_alleleid,
                 "GENEINFO": self._get_variant_record_geneinfo,
                 "CLNREVSTAT": self._get_variant_record_clnrevstat,
+                "CLNRECSTAT": self._get_variant_record_clnrecstat,
                 "CLNSIG": self._get_variant_record_clnsig,
+                "OLD_CLNSIG": self._get_variant_record_old_clnsig,
+                "MC": self._get_variant_record_mc,
+                "RS": self._get_variant_record_rs,
             },
         }
-        self._variant_buffer = self.get_cln_variant_buffer()
-        self._gene_buffer = self.get_pathogenic_gene_buffer()
+
+        self._variant_buffer = []
+        self._gene_buffer = []
 
     @staticmethod
     def _get_variant_record_alleleid(variant_record: pysam.VCFRecord):
@@ -46,8 +51,12 @@ class ClinvarVCFParser(VCFParser):
     @staticmethod
     def _get_variant_record_geneinfo(variant_record: pysam.VCFRecord):
         geneinfo_field = variant_record.info.get("GENEINFO")
-        # split on | to get only the first gene if there is many
-        geneinfo, geneinfo_id = geneinfo_field.split("|")[0].split(":")
+        if geneinfo_field is None:
+            geneinfo = "NA"
+            geneinfo_id = "NA"
+        else:
+            # split on | to get only the first gene if there is many
+            geneinfo, geneinfo_id = geneinfo_field.split("|")[0].split(":")
         return {"gene": geneinfo, "gene_id": geneinfo_id}
 
     @staticmethod
@@ -55,16 +64,61 @@ class ClinvarVCFParser(VCFParser):
         return {"clnrevstat": ",".join(variant_record.info.get("CLNREVSTAT"))}
 
     @staticmethod
+    def _get_variant_record_clnrecstat(variant_record: pysam.VCFRecord):
+        return {"clnrecstat": variant_record.info.get("CLNRECSTAT")}
+
+    @staticmethod
     def _get_variant_record_clnsig(variant_record: pysam.VCFRecord):
-        return {"clnsig": variant_record.info.get("CLNSIG")[0]}
+        if variant_record.info.get("CLNSIG") is None:
+            return {"clnsig": ".."}
+        else:
+            return {"clnsig": variant_record.info.get("CLNSIG")[0]}
+
+    @staticmethod
+    def _get_variant_record_old_clnsig(variant_record: pysam.VCFRecord):
+        return {"old_clnsig": variant_record.info.get("OLD_CLNSIG")}
+
+    def _get_variant_record_mc(self, variant_record: pysam.VCFRecord):
+        variant_record_mc = variant_record.info.get("MC")
+        if variant_record_mc is None:
+            return {"mc": []}
+        try:
+            variant_record_mc_values = self._split_piped_annotation(
+                "MC", variant_record_mc
+            )
+        except AttributeError as e:
+            raise MalformedVCFError(e)
+
+        variant_record_mc_annotations = []
+        for info_subvalues in variant_record_mc_values:
+            so_id = info_subvalues[0].split(":")[-1]
+            molecular_consequence = info_subvalues[1]
+            variant_record_mc_annotations.append(
+                {"so_id": so_id, "molecular_consequence": molecular_consequence}
+            )
+        return {"mc": variant_record_mc_annotations}
+
+    @staticmethod
+    def _get_variant_record_rs(variant_record: pysam.VCFRecord):
+        return {"rs": variant_record.info.get("RS")}
 
     @property
     def variant_buffer(self):
+        if not self._variant_buffer:
+            self.set_variant_buffer(self.get_cln_variant_buffer())
         return self._variant_buffer
+
+    def set_variant_buffer(self, value):
+        self._variant_buffer = value
 
     @property
     def gene_buffer(self):
+        if not self._gene_buffer:
+            self.set_gene_buffer(self.get_pathogenic_gene_buffer())
         return self._gene_buffer
+
+    def set_gene_buffer(self, value):
+        self._gene_buffer = value
 
     @property
     def release(self):
@@ -82,9 +136,13 @@ class ClinvarVCFParser(VCFParser):
                 "REF",
                 "ALT",
                 "CLNSIG",
+                "OLD_CLNSIG",
                 "CLNREVSTAT",
+                "CLNRECSTAT",
                 "ALLELEID",
                 "GENEINFO",
+                "MC",
+                "RS",
             ]
         )
 
@@ -98,21 +156,21 @@ class ClinvarVCFParser(VCFParser):
         for variant_id in variant_buffer:
             clnsig = variant_buffer[variant_id]["clnsig"]
             gene = variant_buffer[variant_id]["gene_id"]
-            conf = variant_buffer[variant_id]["clnrevstat"]
+            review = variant_buffer[variant_id]["clnrevstat"]
             if re.search(r"[pP]athogenic$", clnsig):
                 gene_buffer.setdefault(
                     gene,
                     {
-                        "best_conf": {
-                            "conf": "",
-                            "conf_rank": -1,
-                            "patho_rank": -1,
+                        "best_review": {
+                            "review": "",
+                            "review_rank": -1,
+                            "clnsig_rank": -1,
                             "clnsig": "",
                         },
                         "best_clnsig": {
-                            "conf": "",
-                            "conf_rank": -1,
-                            "patho_rank": -1,
+                            "review": "",
+                            "review_rank": -1,
+                            "clnsig_rank": -1,
                             "clnsig": "",
                         },
                         "gene": variant_buffer[variant_id]["gene"],
@@ -121,55 +179,55 @@ class ClinvarVCFParser(VCFParser):
                 # find the highest review confidence variant
                 # if a better review status variant is detected, keep
                 if (
-                    gene_buffer[gene]["best_conf"]["conf_rank"]
-                    < CLINVAR_REVIEW_STATUS_RANK[conf]
+                    gene_buffer[gene]["best_review"]["review_rank"]
+                    < CLINVAR_REVIEW_STATUS_RANK[review]
                 ):
-                    gene_buffer[gene]["best_conf"] = {
-                        "conf": conf,
-                        "conf_rank": CLINVAR_REVIEW_STATUS_RANK[conf],
-                        "patho_rank": CLINVAR_PATHO_STATUS_RANK[clnsig],
+                    gene_buffer[gene]["best_review"] = {
+                        "review": review,
+                        "review_rank": CLINVAR_REVIEW_STATUS_RANK[review],
+                        "clnsig_rank": CLINVAR_PATHO_STATUS_RANK[clnsig],
                         "clnsig": clnsig,
                     }
                 # if an equal better review status variant is detected, keep the highest pathogenicity classication
                 elif (
-                    gene_buffer[gene]["best_conf"]["conf_rank"]
-                    == CLINVAR_REVIEW_STATUS_RANK[conf]
+                    gene_buffer[gene]["best_review"]["review_rank"]
+                    == CLINVAR_REVIEW_STATUS_RANK[review]
                 ):
                     if (
-                        gene_buffer[gene]["best_conf"]["patho_rank"]
+                        gene_buffer[gene]["best_review"]["clnsig_rank"]
                         < CLINVAR_PATHO_STATUS_RANK[clnsig]
                     ):
-                        gene_buffer[gene]["best_conf"] = {
-                            "conf": conf,
-                            "conf_rank": CLINVAR_REVIEW_STATUS_RANK[conf],
-                            "patho_rank": CLINVAR_PATHO_STATUS_RANK[clnsig],
+                        gene_buffer[gene]["best_review"] = {
+                            "review": review,
+                            "review_rank": CLINVAR_REVIEW_STATUS_RANK[review],
+                            "clnsig_rank": CLINVAR_PATHO_STATUS_RANK[clnsig],
                             "clnsig": clnsig,
                         }
                 # find the highest pathogenic variant
                 # if a better pathogenic classification is detected, keep
                 if (
-                    gene_buffer[gene]["best_clnsig"]["patho_rank"]
+                    gene_buffer[gene]["best_clnsig"]["clnsig_rank"]
                     < CLINVAR_PATHO_STATUS_RANK[clnsig]
                 ):
                     gene_buffer[gene]["best_clnsig"] = {
-                        "conf": conf,
-                        "conf_rank": CLINVAR_REVIEW_STATUS_RANK[conf],
-                        "patho_rank": CLINVAR_PATHO_STATUS_RANK[clnsig],
+                        "review": review,
+                        "review_rank": CLINVAR_REVIEW_STATUS_RANK[review],
+                        "clnsig_rank": CLINVAR_PATHO_STATUS_RANK[clnsig],
                         "clnsig": clnsig,
                     }
                 # if an equal pathogenic classification is detected, keep the highest review status variant
                 elif (
-                    gene_buffer[gene]["best_clnsig"]["patho_rank"]
+                    gene_buffer[gene]["best_clnsig"]["clnsig_rank"]
                     == CLINVAR_PATHO_STATUS_RANK[clnsig]
                 ):
                     if (
-                        gene_buffer[gene]["best_clnsig"]["conf_rank"]
-                        < CLINVAR_REVIEW_STATUS_RANK[conf]
+                        gene_buffer[gene]["best_clnsig"]["review_rank"]
+                        < CLINVAR_REVIEW_STATUS_RANK[review]
                     ):
                         gene_buffer[gene]["best_clnsig"] = {
-                            "conf": conf,
-                            "conf_rank": CLINVAR_REVIEW_STATUS_RANK[conf],
-                            "patho_rank": CLINVAR_PATHO_STATUS_RANK[clnsig],
+                            "review": review,
+                            "review_rank": CLINVAR_REVIEW_STATUS_RANK[review],
+                            "clnsig_rank": CLINVAR_PATHO_STATUS_RANK[clnsig],
                             "clnsig": clnsig,
                         }
         return gene_buffer
@@ -213,8 +271,8 @@ class ClinvarVCFComparator(object):
         """
         Uses VCFs variant buffer and compare them to detect all changes and output a list of variant dict
         """
-        source_variant_buffer = self.source_vcf.variant_buffer
-        target_variant_buffer = self.target_vcf.variant_buffer
+        source_variant_buffer = self.source_vcf.variant_buffer.copy()
+        target_variant_buffer = self.target_vcf.variant_buffer.copy()
 
         compared_variants = []
         variants_have_been_lost = False
@@ -224,6 +282,7 @@ class ClinvarVCFComparator(object):
             target_variant_clnsig = target_variant_buffer[variant_id]["clnsig"]
             target_variant_clinvar_id = target_variant_buffer[variant_id]["id"]
             target_variant_clnrevstat = target_variant_buffer[variant_id]["clnrevstat"]
+            target_variant_clnrecstat = target_variant_buffer[variant_id]["clnrecstat"]
             target_variant_gene_info = target_variant_buffer[variant_id]["gene"]
             target_variant_geneinfo_id = target_variant_buffer[variant_id]["gene_id"]
             # return variants with important change of classification
@@ -251,6 +310,7 @@ class ClinvarVCFComparator(object):
                             "new_classification": target_variant_clnsig,
                             "breaking_change": breaking_change,
                             "confidence": target_variant_clnrevstat,
+                            "reclassification_status": target_variant_clnrecstat,
                             "gene_info": target_variant_gene_info,
                             "gene_info_id": target_variant_geneinfo_id,
                             "name_clinvar_old": self.source_vcf.release,
@@ -277,6 +337,7 @@ class ClinvarVCFComparator(object):
                         "new_classification": target_variant_clnsig,
                         "breaking_change": breaking_change,
                         "confidence": target_variant_clnrevstat,
+                        "reclassification_status": target_variant_clnrecstat,
                         "gene_info": target_variant_gene_info,
                         "gene_info_id": target_variant_geneinfo_id,
                         "name_clinvar_old": self.source_vcf.release,
@@ -289,6 +350,7 @@ class ClinvarVCFComparator(object):
             source_variant_clnsig = source_variant_buffer[variant_id]["clnsig"]
             source_variant_clinvar_id = source_variant_buffer[variant_id]["id"]
             source_variant_clnrevstat = source_variant_buffer[variant_id]["clnrevstat"]
+            source_variant_clnrecstat = source_variant_buffer[variant_id]["clnrecstat"]
             source_variant_gene_info = source_variant_buffer[variant_id]["gene"]
             source_variant_geneinfo_id = source_variant_buffer[variant_id]["gene_id"]
 
@@ -305,6 +367,7 @@ class ClinvarVCFComparator(object):
                     "new_classification": "..",
                     "breaking_change": breaking_change,
                     "confidence": source_variant_clnrevstat,
+                    "reclassification_status": source_variant_clnrecstat,
                     "gene_info": source_variant_gene_info,
                     "gene_info_id": source_variant_geneinfo_id,
                     "name_clinvar_old": self.source_vcf.release,
@@ -326,8 +389,8 @@ class ClinvarVCFComparator(object):
         self.logger.info("Comparing source and target vcf genes")
         compared_genes = []
         # create pathogenic clinvar gene dictionary
-        source_pathogenic_genes = self.source_vcf.gene_buffer
-        target_pathogenic_genes = self.target_vcf.gene_buffer
+        source_pathogenic_genes = self.source_vcf.gene_buffer.copy()
+        target_pathogenic_genes = self.target_vcf.gene_buffer.copy()
 
         # append lost pathogenic genes between 2 versions
         lost_pathogenic_gene_set = (
@@ -347,7 +410,7 @@ class ClinvarVCFComparator(object):
                     ][
                         "best_clnsig"
                     ][
-                        "conf"
+                        "review"
                     ],
                     "pathogenic_class_new": "..",
                     "pathogenic_class_best_review_confidence_new": "..",
@@ -355,13 +418,13 @@ class ClinvarVCFComparator(object):
                     "review_confidence_best_pathogenic_class_old": source_pathogenic_genes[
                         gene_key
                     ][
-                        "best_conf"
+                        "best_review"
                     ][
                         "clnsig"
                     ],
                     "review_confidence_old": source_pathogenic_genes[gene_key][
-                        "best_conf"
-                    ]["conf"],
+                        "best_review"
+                    ]["review"],
                     "review_confidence_best_pathogenic_class_new": "..",
                     "review_confidence_new": "..",
                     "name_clinvar_old": self.source_vcf.release,
@@ -389,7 +452,7 @@ class ClinvarVCFComparator(object):
                     ][
                         "best_clnsig"
                     ][
-                        "conf"
+                        "review"
                     ],
                     "review_confidence_status": "NEW_REVIEW",
                     "review_confidence_best_pathogenic_class_old": "..",
@@ -397,13 +460,13 @@ class ClinvarVCFComparator(object):
                     "review_confidence_best_pathogenic_class_new": target_pathogenic_genes[
                         gene_key
                     ][
-                        "best_conf"
+                        "best_review"
                     ][
                         "clnsig"
                     ],
                     "review_confidence_new": target_pathogenic_genes[gene_key][
-                        "best_conf"
-                    ]["conf"],
+                        "best_review"
+                    ]["review"],
                     "name_clinvar_old": self.source_vcf.release,
                     "name_clinvar_new": self.target_vcf.release,
                 }
@@ -425,58 +488,58 @@ class ClinvarVCFComparator(object):
             ]
             pathogenic_class_best_review_confidence_old = source_pathogenic_genes[
                 gene_key
-            ]["best_clnsig"]["conf"]
+            ]["best_clnsig"]["review"]
             pathogenic_class_new = target_pathogenic_genes[gene_key]["best_clnsig"][
                 "clnsig"
             ]
             pathogenic_class_best_review_confidence_new = target_pathogenic_genes[
                 gene_key
-            ]["best_clnsig"]["conf"]
+            ]["best_clnsig"]["review"]
             review_confidence_status = "UNCHANGED"
             review_confidence_best_pathogenic_class_old = source_pathogenic_genes[
                 gene_key
-            ]["best_conf"]["clnsig"]
+            ]["best_review"]["clnsig"]
             review_confidence_old = source_pathogenic_genes[gene_key]["best_clnsig"][
-                "conf"
+                "review"
             ]
             review_confidence_best_pathogenic_class_new = target_pathogenic_genes[
                 gene_key
-            ]["best_conf"]["clnsig"]
-            review_confidence_new = target_pathogenic_genes[gene_key]["best_conf"][
-                "conf"
+            ]["best_review"]["clnsig"]
+            review_confidence_new = target_pathogenic_genes[gene_key]["best_review"][
+                "review"
             ]
 
             # Select the highest ACMG classification status
             if (
-                source_pathogenic_genes[gene_key]["best_clnsig"]["patho_rank"]
-                == target_pathogenic_genes[gene_key]["best_clnsig"]["patho_rank"]
+                source_pathogenic_genes[gene_key]["best_clnsig"]["clnsig_rank"]
+                == target_pathogenic_genes[gene_key]["best_clnsig"]["clnsig_rank"]
             ):
                 pass
             elif (
-                source_pathogenic_genes[gene_key]["best_clnsig"]["patho_rank"]
-                > target_pathogenic_genes[gene_key]["best_clnsig"]["patho_rank"]
+                source_pathogenic_genes[gene_key]["best_clnsig"]["clnsig_rank"]
+                > target_pathogenic_genes[gene_key]["best_clnsig"]["clnsig_rank"]
             ):
                 pathogenic_class_status = "DOWNGRADED_PATHOGENICITY_STATUS"
             elif (
-                source_pathogenic_genes[gene_key]["best_clnsig"]["patho_rank"]
-                < target_pathogenic_genes[gene_key]["best_clnsig"]["patho_rank"]
+                source_pathogenic_genes[gene_key]["best_clnsig"]["clnsig_rank"]
+                < target_pathogenic_genes[gene_key]["best_clnsig"]["clnsig_rank"]
             ):
                 pathogenic_class_status = "UPGRADED_PATHOGENICITY_STATUS"
 
             # Select the highest review confidence status
             if (
-                source_pathogenic_genes[gene_key]["best_conf"]["conf_rank"]
-                == target_pathogenic_genes[gene_key]["best_conf"]["conf_rank"]
+                source_pathogenic_genes[gene_key]["best_review"]["review_rank"]
+                == target_pathogenic_genes[gene_key]["best_review"]["review_rank"]
             ):
                 pass
             elif (
-                source_pathogenic_genes[gene_key]["best_conf"]["conf_rank"]
-                > target_pathogenic_genes[gene_key]["best_conf"]["conf_rank"]
+                source_pathogenic_genes[gene_key]["best_review"]["review_rank"]
+                > target_pathogenic_genes[gene_key]["best_review"]["review_rank"]
             ):
                 review_confidence_status = "DOWNGRADED_REVIEW_CONFIDENCE"
             elif (
-                source_pathogenic_genes[gene_key]["best_conf"]["conf_rank"]
-                < target_pathogenic_genes[gene_key]["best_conf"]["conf_rank"]
+                source_pathogenic_genes[gene_key]["best_review"]["review_rank"]
+                < target_pathogenic_genes[gene_key]["best_review"]["review_rank"]
             ):
                 review_confidence_status = "UPGRADED_REVIEW_CONFIDENCE"
             else:
@@ -541,6 +604,7 @@ class ClinvarVCFComparator(object):
             "new_classification",
             "breaking_change",
             "confidence",
+            "reclassification_status",
             "gene_info",
             "gene_info_id",
             "name_clinvar_old",
@@ -695,13 +759,13 @@ class ClinvarVCFComparator(object):
                         ]["clnsig"],
                         "pathogenic_class_best_review_confidence_new": pathogenic_genes[
                             gene_key
-                        ]["best_clnsig"]["conf"],
+                        ]["best_clnsig"]["review"],
                         "review_confidence_best_pathogenic_class_new": pathogenic_genes[
                             gene_key
-                        ]["best_conf"]["clnsig"],
+                        ]["best_review"]["clnsig"],
                         "review_confidence_new": pathogenic_genes[gene_key][
-                            "best_conf"
-                        ]["conf"],
+                            "best_review"
+                        ]["review"],
                         "name_clinvar_new": self.target_vcf.release,
                     }
                 )

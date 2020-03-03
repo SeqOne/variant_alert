@@ -1,0 +1,4100 @@
+{
+  "GRCh37_1_865628_G_A": {
+    "chrom": "1",
+    "pos": 865628,
+    "id": "789256",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 707587,
+    "gene": "SAMD11",
+    "gene_id": "148398",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_874778_GCCTCCCCAGCCACGGTGAGGACCCACCCTGGCATGATCCCCCTCATCA_G": {
+    "chrom": "1",
+    "pos": 874778,
+    "id": "769497",
+    "ref": "GCCTCCCCAGCCACGGTGAGGACCCACCCTGGCATGATCCCCCTCATCA",
+    "alt": "G",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 777163,
+    "gene": "SAMD11",
+    "gene_id": "148398",
+    "mc": [
+      {
+        "so_id": "0001575",
+        "molecular_consequence": "splice_donor_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_879481_G_C": {
+    "chrom": "1",
+    "pos": 879481,
+    "id": "780745",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 707599,
+    "gene": "SAMD11",
+    "gene_id": "148398",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_880944_G_A": {
+    "chrom": "1",
+    "pos": 880944,
+    "id": "730521",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 732665,
+    "gene": "NOC2L",
+    "gene_id": "26155",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_887409_G_C": {
+    "chrom": "1",
+    "pos": 887409,
+    "id": "735490",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 746686,
+    "gene": "NOC2L",
+    "gene_id": "26155",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_887989_A_G": {
+    "chrom": "1",
+    "pos": 887989,
+    "id": "730522",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 743794,
+    "gene": "NOC2L",
+    "gene_id": "26155",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_889450_C_A": {
+    "chrom": "1",
+    "pos": 889450,
+    "id": "734103",
+    "ref": "C",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 732666,
+    "gene": "NOC2L",
+    "gene_id": "26155",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_891393_G_A": {
+    "chrom": "1",
+    "pos": 891393,
+    "id": "735491",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 746687,
+    "gene": "NOC2L",
+    "gene_id": "26155",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_892370_T_C": {
+    "chrom": "1",
+    "pos": 892370,
+    "id": "735492",
+    "ref": "T",
+    "alt": "C",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 746688,
+    "gene": "NOC2L",
+    "gene_id": "26155",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_892512_C_T": {
+    "chrom": "1",
+    "pos": 892512,
+    "id": "735493",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 746689,
+    "gene": "NOC2L",
+    "gene_id": "26155",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_897009_A_G": {
+    "chrom": "1",
+    "pos": 897009,
+    "id": "782832",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 707603,
+    "gene": "KLHL17",
+    "gene_id": "339451",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_897133_G_A": {
+    "chrom": "1",
+    "pos": 897133,
+    "id": "714060",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 730038,
+    "gene": "KLHL17",
+    "gene_id": "339451",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_897726_C_T": {
+    "chrom": "1",
+    "pos": 897726,
+    "id": "784924",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 778856,
+    "gene": "KLHL17",
+    "gene_id": "339451",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_898119_C_T": {
+    "chrom": "1",
+    "pos": 898119,
+    "id": "787730",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 707604,
+    "gene": "KLHL17",
+    "gene_id": "339451",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_898307_C_T": {
+    "chrom": "1",
+    "pos": 898307,
+    "id": "747957",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 759081,
+    "gene": "KLHL17",
+    "gene_id": "339451",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_898613_C_T": {
+    "chrom": "1",
+    "pos": 898613,
+    "id": "775485",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 696923,
+    "gene": "KLHL17",
+    "gene_id": "339451",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_898729_C_G": {
+    "chrom": "1",
+    "pos": 898729,
+    "id": "750077",
+    "ref": "C",
+    "alt": "G",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 746690,
+    "gene": "KLHL17",
+    "gene_id": "339451",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_898852_C_T": {
+    "chrom": "1",
+    "pos": 898852,
+    "id": "773624",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 696924,
+    "gene": "KLHL17",
+    "gene_id": "339451",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_899919_T_G": {
+    "chrom": "1",
+    "pos": 899919,
+    "id": "743253",
+    "ref": "T",
+    "alt": "G",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 759000,
+    "gene": "KLHL17",
+    "gene_id": "339451",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_900439_G_A": {
+    "chrom": "1",
+    "pos": 900439,
+    "id": "733717",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 732668,
+    "gene": "KLHL17",
+    "gene_id": "339451",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_901922_G_A": {
+    "chrom": "1",
+    "pos": 901922,
+    "id": "782833",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 707605,
+    "gene": "PLEKHN1",
+    "gene_id": "84069",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_901923_C_A": {
+    "chrom": "1",
+    "pos": 901923,
+    "id": "782834",
+    "ref": "C",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 707606,
+    "gene": "PLEKHN1",
+    "gene_id": "84069",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_905894_C_T": {
+    "chrom": "1",
+    "pos": 905894,
+    "id": "710495",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 730039,
+    "gene": "PLEKHN1",
+    "gene_id": "84069",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_908275_G_A": {
+    "chrom": "1",
+    "pos": 908275,
+    "id": "770481",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 696926,
+    "gene": "PLEKHN1",
+    "gene_id": "84069",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_909222_G_A": {
+    "chrom": "1",
+    "pos": 909222,
+    "id": "791106",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 707611,
+    "gene": "PLEKHN1",
+    "gene_id": "84069",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_909369_G_A": {
+    "chrom": "1",
+    "pos": 909369,
+    "id": "711747",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 719150,
+    "gene": "PLEKHN1",
+    "gene_id": "84069",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949392_C_T": {
+    "chrom": "1",
+    "pos": 949392,
+    "id": "661610",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626468,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949422_G_A": {
+    "chrom": "1",
+    "pos": 949422,
+    "id": "475283",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 446939,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "143888043"
+    ]
+  },
+  "GRCh37_1_949427_A_G": {
+    "chrom": "1",
+    "pos": 949427,
+    "id": "639487",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626469,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949438_A_G": {
+    "chrom": "1",
+    "pos": 949438,
+    "id": "740895",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 745491,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949491_G_A": {
+    "chrom": "1",
+    "pos": 949491,
+    "id": "659187",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626470,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949502_C_T": {
+    "chrom": "1",
+    "pos": 949502,
+    "id": "542074",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514926,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "150861311"
+    ]
+  },
+  "GRCh37_1_949518_C_T": {
+    "chrom": "1",
+    "pos": 949518,
+    "id": "652606",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626471,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949523_C_T": {
+    "chrom": "1",
+    "pos": 949523,
+    "id": "183381",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "no_assertion_criteria_provided",
+    "clnrecstat": null,
+    "alleleid": 181485,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001587",
+        "molecular_consequence": "nonsense"
+      }
+    ],
+    "rs": [
+      "786201005"
+    ]
+  },
+  "GRCh37_1_949531_G_A": {
+    "chrom": "1",
+    "pos": 949531,
+    "id": "755607",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 761014,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949559_C_T": {
+    "chrom": "1",
+    "pos": 949559,
+    "id": "542075",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514896,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "1553169766"
+    ]
+  },
+  "GRCh37_1_949562_G_A": {
+    "chrom": "1",
+    "pos": 949562,
+    "id": "661288",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626472,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949597_C_T": {
+    "chrom": "1",
+    "pos": 949597,
+    "id": "475278",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 446987,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "61766284"
+    ]
+  },
+  "GRCh37_1_949602_C_T": {
+    "chrom": "1",
+    "pos": 949602,
+    "id": "655870",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626473,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949608_G_A": {
+    "chrom": "1",
+    "pos": 949608,
+    "id": "402986",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 389314,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "1921"
+    ]
+  },
+  "GRCh37_1_949631_G_A": {
+    "chrom": "1",
+    "pos": 949631,
+    "id": "658311",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626474,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949635_G_A": {
+    "chrom": "1",
+    "pos": 949635,
+    "id": "571208",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556509,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949656_G_A": {
+    "chrom": "1",
+    "pos": 949656,
+    "id": "568195",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556512,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949696_C_CG": {
+    "chrom": "1",
+    "pos": 949696,
+    "id": "161455",
+    "ref": "C",
+    "alt": "CG",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "no_assertion_criteria_provided",
+    "clnrecstat": null,
+    "alleleid": 171289,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001589",
+        "molecular_consequence": "frameshift_variant"
+      }
+    ],
+    "rs": [
+      "672601345"
+    ]
+  },
+  "GRCh37_1_949738_C_T": {
+    "chrom": "1",
+    "pos": 949738,
+    "id": "762588",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 761015,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949739_G_A": {
+    "chrom": "1",
+    "pos": 949739,
+    "id": "648609",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626475,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949739_G_T": {
+    "chrom": "1",
+    "pos": 949739,
+    "id": "161454",
+    "ref": "G",
+    "alt": "T",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "no_assertion_criteria_provided",
+    "clnrecstat": null,
+    "alleleid": 171288,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001587",
+        "molecular_consequence": "nonsense"
+      }
+    ],
+    "rs": [
+      "672601312"
+    ]
+  },
+  "GRCh37_1_949781_G_A": {
+    "chrom": "1",
+    "pos": 949781,
+    "id": "542076",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514865,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "138829117"
+    ]
+  },
+  "GRCh37_1_949802_G_A": {
+    "chrom": "1",
+    "pos": 949802,
+    "id": "658718",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626476,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949831_C_T": {
+    "chrom": "1",
+    "pos": 949831,
+    "id": "475281",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 446936,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "116002608"
+    ]
+  },
+  "GRCh37_1_949832_G_A": {
+    "chrom": "1",
+    "pos": 949832,
+    "id": "651310",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626477,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949837_A_G": {
+    "chrom": "1",
+    "pos": 949837,
+    "id": "745342",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 745492,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_949851_G_C": {
+    "chrom": "1",
+    "pos": 949851,
+    "id": "475282",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 446981,
+    "gene": "ISG15",
+    "gene_id": "9636",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "140447219"
+    ]
+  },
+  "GRCh37_1_955213_T_C": {
+    "chrom": "1",
+    "pos": 955213,
+    "id": "667960",
+    "ref": "T",
+    "alt": "C",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 656836,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+    ],
+    "rs": null
+  },
+  "GRCh37_1_955557_C_A": {
+    "chrom": "1",
+    "pos": 955557,
+    "id": "474165",
+    "ref": "C",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 446941,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "776698665"
+    ]
+  },
+  "GRCh37_1_955563_G_C": {
+    "chrom": "1",
+    "pos": 955563,
+    "id": "387476",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Benign/Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 364282,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "539283387"
+    ]
+  },
+  "GRCh37_1_955584_G_GGCCGCTGCT": {
+    "chrom": "1",
+    "pos": 955584,
+    "id": "574825",
+    "ref": "G",
+    "alt": "GGCCGCTGCT",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556516,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001821",
+        "molecular_consequence": "inframe_insertion"
+      }
+    ],
+    "rs": [
+      "1196847979"
+    ]
+  },
+  "GRCh37_1_955596_C_G": {
+    "chrom": "1",
+    "pos": 955596,
+    "id": "377270",
+    "ref": "C",
+    "alt": "G",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 364148,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "764659938"
+    ]
+  },
+  "GRCh37_1_955596_CG_GT": {
+    "chrom": "1",
+    "pos": 955596,
+    "id": "541157",
+    "ref": "CG",
+    "alt": "GT",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514900,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "1553170743"
+    ]
+  },
+  "GRCh37_1_955597_G_T": {
+    "chrom": "1",
+    "pos": 955597,
+    "id": "128310",
+    "ref": "G",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 133759,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "115173026"
+    ]
+  },
+  "GRCh37_1_955601_C_T": {
+    "chrom": "1",
+    "pos": 955601,
+    "id": "388958",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 364285,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "1057523287"
+    ]
+  },
+  "GRCh37_1_955615_G_C": {
+    "chrom": "1",
+    "pos": 955615,
+    "id": "762755",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 761016,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_955619_G_C": {
+    "chrom": "1",
+    "pos": 955619,
+    "id": "210112",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Conflicting_interpretations_of_pathogenicity",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_conflicting_interpretations",
+    "clnrecstat": null,
+    "alleleid": 206690,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "201073369"
+    ]
+  },
+  "GRCh37_1_955645_C_T": {
+    "chrom": "1",
+    "pos": 955645,
+    "id": "757712",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 761017,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_955646_C_T": {
+    "chrom": "1",
+    "pos": 955646,
+    "id": "657693",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626478,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_955654_C_T": {
+    "chrom": "1",
+    "pos": 955654,
+    "id": "645701",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626479,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_955677_A_C": {
+    "chrom": "1",
+    "pos": 955677,
+    "id": "774056",
+    "ref": "A",
+    "alt": "C",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 695921,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_955724_G_A": {
+    "chrom": "1",
+    "pos": 955724,
+    "id": "571135",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556541,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_955735_G_C": {
+    "chrom": "1",
+    "pos": 955735,
+    "id": "581563",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556511,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_955741_G_C": {
+    "chrom": "1",
+    "pos": 955741,
+    "id": "795664",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 780247,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_955763_C_T": {
+    "chrom": "1",
+    "pos": 955763,
+    "id": "753921",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 774357,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_957568_A_G": {
+    "chrom": "1",
+    "pos": 957568,
+    "id": "263166",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 249265,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": [
+      "115704555"
+    ]
+  },
+  "GRCh37_1_957605_G_A": {
+    "chrom": "1",
+    "pos": 957605,
+    "id": "243036",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "no_assertion_criteria_provided",
+    "clnrecstat": null,
+    "alleleid": 244110,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "756623659"
+    ]
+  },
+  "GRCh37_1_957611_G_A": {
+    "chrom": "1",
+    "pos": 957611,
+    "id": "660579",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626480,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_957640_C_T": {
+    "chrom": "1",
+    "pos": 957640,
+    "id": "128296",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 133745,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "6657048"
+    ]
+  },
+  "GRCh37_1_957676_C_T": {
+    "chrom": "1",
+    "pos": 957676,
+    "id": "736899",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 745493,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_957677_C_T": {
+    "chrom": "1",
+    "pos": 957677,
+    "id": "656507",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626481,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_957693_A_T": {
+    "chrom": "1",
+    "pos": 957693,
+    "id": "243037",
+    "ref": "A",
+    "alt": "T",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "no_assertion_criteria_provided",
+    "clnrecstat": null,
+    "alleleid": 244111,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "879253787"
+    ]
+  },
+  "GRCh37_1_957715_C_T": {
+    "chrom": "1",
+    "pos": 957715,
+    "id": "759531",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 761018,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_957741_C_A": {
+    "chrom": "1",
+    "pos": 957741,
+    "id": "541155",
+    "ref": "C",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514929,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "533320704"
+    ]
+  },
+  "GRCh37_1_957763_C_G": {
+    "chrom": "1",
+    "pos": 957763,
+    "id": "541203",
+    "ref": "C",
+    "alt": "G",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514916,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "768527925"
+    ]
+  },
+  "GRCh37_1_957770_G_A": {
+    "chrom": "1",
+    "pos": 957770,
+    "id": "657583",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626482,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_957798_G_A": {
+    "chrom": "1",
+    "pos": 957798,
+    "id": "661960",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626483,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_957898_G_T": {
+    "chrom": "1",
+    "pos": 957898,
+    "id": "677944",
+    "ref": "G",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 656838,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_970417_A_C": {
+    "chrom": "1",
+    "pos": 970417,
+    "id": "678943",
+    "ref": "A",
+    "alt": "C",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 656908,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_970653_C_T": {
+    "chrom": "1",
+    "pos": 970653,
+    "id": "763444",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 774348,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_970687_C_T": {
+    "chrom": "1",
+    "pos": 970687,
+    "id": "474141",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 446942,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "140954236"
+    ]
+  },
+  "GRCh37_1_970691_G_A": {
+    "chrom": "1",
+    "pos": 970691,
+    "id": "669341",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 655025,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_970693_C_T": {
+    "chrom": "1",
+    "pos": 970693,
+    "id": "659840",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626496,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_970836_G_A": {
+    "chrom": "1",
+    "pos": 970836,
+    "id": "678944",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 656889,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976052_G_C": {
+    "chrom": "1",
+    "pos": 976052,
+    "id": "541188",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514915,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "756710837"
+    ]
+  },
+  "GRCh37_1_976056_A_G": {
+    "chrom": "1",
+    "pos": 976056,
+    "id": "656091",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626498,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976059_C_T": {
+    "chrom": "1",
+    "pos": 976059,
+    "id": "210111",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Conflicting_interpretations_of_pathogenicity",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_conflicting_interpretations",
+    "clnrecstat": null,
+    "alleleid": 206691,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "544749044"
+    ]
+  },
+  "GRCh37_1_976097_G_GGGGCC": {
+    "chrom": "1",
+    "pos": 976097,
+    "id": "666960",
+    "ref": "G",
+    "alt": "GGGGCC",
+    "clnsig": "Likely_pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 654166,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001589",
+        "molecular_consequence": "frameshift_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976112_G_A": {
+    "chrom": "1",
+    "pos": 976112,
+    "id": "474159",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 447009,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "201301445"
+    ]
+  },
+  "GRCh37_1_976124_CAAG_C": {
+    "chrom": "1",
+    "pos": 976124,
+    "id": "474163",
+    "ref": "CAAG",
+    "alt": "C",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 446960,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001822",
+        "molecular_consequence": "inframe_deletion"
+      }
+    ],
+    "rs": [
+      "749209897"
+    ]
+  },
+  "GRCh37_1_976135_C_T": {
+    "chrom": "1",
+    "pos": 976135,
+    "id": "641442",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626499,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976157_T_C": {
+    "chrom": "1",
+    "pos": 976157,
+    "id": "706151",
+    "ref": "T",
+    "alt": "C",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 690287,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976184_C_T": {
+    "chrom": "1",
+    "pos": 976184,
+    "id": "541197",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514870,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "1235929400"
+    ]
+  },
+  "GRCh37_1_976208_G_A": {
+    "chrom": "1",
+    "pos": 976208,
+    "id": "706854",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 690289,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976219_G_A": {
+    "chrom": "1",
+    "pos": 976219,
+    "id": "541156",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514918,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "1284515586"
+    ]
+  },
+  "GRCh37_1_976231_G_T": {
+    "chrom": "1",
+    "pos": 976231,
+    "id": "664630",
+    "ref": "G",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626500,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976251_G_A": {
+    "chrom": "1",
+    "pos": 976251,
+    "id": "653013",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626501,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976259_C_T": {
+    "chrom": "1",
+    "pos": 976259,
+    "id": "656111",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626502,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976267_G_C": {
+    "chrom": "1",
+    "pos": 976267,
+    "id": "792414",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 786986,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976554_C_G": {
+    "chrom": "1",
+    "pos": 976554,
+    "id": "263202",
+    "ref": "C",
+    "alt": "G",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 249305,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "191270495"
+    ]
+  },
+  "GRCh37_1_976563_C_T": {
+    "chrom": "1",
+    "pos": 976563,
+    "id": "263203",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign/Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 249306,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "536085218"
+    ]
+  },
+  "GRCh37_1_976577_T_C": {
+    "chrom": "1",
+    "pos": 976577,
+    "id": "430121",
+    "ref": "T",
+    "alt": "C",
+    "clnsig": "Conflicting_interpretations_of_pathogenicity",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_conflicting_interpretations",
+    "clnrecstat": null,
+    "alleleid": 421151,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "779170859"
+    ]
+  },
+  "GRCh37_1_976596_C_T": {
+    "chrom": "1",
+    "pos": 976596,
+    "id": "744653",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 745504,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976598_C_T": {
+    "chrom": "1",
+    "pos": 976598,
+    "id": "263204",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign/Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 249307,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "200607541"
+    ]
+  },
+  "GRCh37_1_976625_C_T": {
+    "chrom": "1",
+    "pos": 976625,
+    "id": "704003",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 690290,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976629_C_T": {
+    "chrom": "1",
+    "pos": 976629,
+    "id": "128320",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 133769,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "113789806"
+    ]
+  },
+  "GRCh37_1_976632_G_A": {
+    "chrom": "1",
+    "pos": 976632,
+    "id": "541196",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514919,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "746098476"
+    ]
+  },
+  "GRCh37_1_976654_C_T": {
+    "chrom": "1",
+    "pos": 976654,
+    "id": "474169",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 446994,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "1256837701"
+    ]
+  },
+  "GRCh37_1_976661_C_T": {
+    "chrom": "1",
+    "pos": 976661,
+    "id": "643698",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626503,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976665_C_G": {
+    "chrom": "1",
+    "pos": 976665,
+    "id": "541187",
+    "ref": "C",
+    "alt": "G",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514922,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "956784907"
+    ]
+  },
+  "GRCh37_1_976674_C_T": {
+    "chrom": "1",
+    "pos": 976674,
+    "id": "724179",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 731512,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976705_G_A": {
+    "chrom": "1",
+    "pos": 976705,
+    "id": "663878",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626504,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976710_G_A": {
+    "chrom": "1",
+    "pos": 976710,
+    "id": "541205",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514942,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "765834882"
+    ]
+  },
+  "GRCh37_1_976716_G_A": {
+    "chrom": "1",
+    "pos": 976716,
+    "id": "760945",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 761023,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976718_TCCTGCGCCGCG_T": {
+    "chrom": "1",
+    "pos": 976718,
+    "id": "654128",
+    "ref": "TCCTGCGCCGCG",
+    "alt": "T",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626505,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001589",
+        "molecular_consequence": "frameshift_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976719_C_T": {
+    "chrom": "1",
+    "pos": 976719,
+    "id": "711832",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 718044,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976729_G_A": {
+    "chrom": "1",
+    "pos": 976729,
+    "id": "541167",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514923,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "1318084676"
+    ]
+  },
+  "GRCh37_1_976734_CGCCCGCCAGGAGAATGTCTTCAAGAAGTTCGACG_C": {
+    "chrom": "1",
+    "pos": 976734,
+    "id": "574478",
+    "ref": "CGCCCGCCAGGAGAATGTCTTCAAGAAGTTCGACG",
+    "alt": "C",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556892,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001589",
+        "molecular_consequence": "frameshift_variant"
+      }
+    ],
+    "rs": [
+      "1557700705"
+    ]
+  },
+  "GRCh37_1_976767_C_T": {
+    "chrom": "1",
+    "pos": 976767,
+    "id": "704466",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 690291,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976861_C_T": {
+    "chrom": "1",
+    "pos": 976861,
+    "id": "644646",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626506,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976885_C_G": {
+    "chrom": "1",
+    "pos": 976885,
+    "id": "657601",
+    "ref": "C",
+    "alt": "G",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626507,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976914_A_G": {
+    "chrom": "1",
+    "pos": 976914,
+    "id": "568172",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556810,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976925_T_C": {
+    "chrom": "1",
+    "pos": 976925,
+    "id": "703297",
+    "ref": "T",
+    "alt": "C",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 690292,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976939_G_GGCCC": {
+    "chrom": "1",
+    "pos": 976939,
+    "id": "654968",
+    "ref": "G",
+    "alt": "GGCCC",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626508,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001589",
+        "molecular_consequence": "frameshift_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976943_C_T": {
+    "chrom": "1",
+    "pos": 976943,
+    "id": "767003",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 695926,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_976959_C_G": {
+    "chrom": "1",
+    "pos": 976959,
+    "id": "474095",
+    "ref": "C",
+    "alt": "G",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 446995,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "149868381"
+    ]
+  },
+  "GRCh37_1_976962_C_T": {
+    "chrom": "1",
+    "pos": 976962,
+    "id": "126556",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "no_assertion_criteria_provided",
+    "clnrecstat": null,
+    "alleleid": 132069,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001587",
+        "molecular_consequence": "nonsense"
+      }
+    ],
+    "rs": [
+      "587777299"
+    ]
+  },
+  "GRCh37_1_976963_A_G": {
+    "chrom": "1",
+    "pos": 976963,
+    "id": "128291",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 133740,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "150359724"
+    ]
+  },
+  "GRCh37_1_976994_C_T": {
+    "chrom": "1",
+    "pos": 976994,
+    "id": "736855",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 745505,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977012_C_T": {
+    "chrom": "1",
+    "pos": 977012,
+    "id": "704787",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 690293,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977017_G_A": {
+    "chrom": "1",
+    "pos": 977017,
+    "id": "648310",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626509,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977027_G_A": {
+    "chrom": "1",
+    "pos": 977027,
+    "id": "541211",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514931,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "563020089"
+    ]
+  },
+  "GRCh37_1_977028_G_T": {
+    "chrom": "1",
+    "pos": 977028,
+    "id": "263158",
+    "ref": "G",
+    "alt": "T",
+    "clnsig": "Benign/Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 249308,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "138031468"
+    ]
+  },
+  "GRCh37_1_977035_G_A": {
+    "chrom": "1",
+    "pos": 977035,
+    "id": "474096",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 447000,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "1553174827"
+    ]
+  },
+  "GRCh37_1_977042_C_T": {
+    "chrom": "1",
+    "pos": 977042,
+    "id": "729235",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 731513,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977049_C_A": {
+    "chrom": "1",
+    "pos": 977049,
+    "id": "570634",
+    "ref": "C",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556812,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "1557701584"
+    ]
+  },
+  "GRCh37_1_977050_A_G": {
+    "chrom": "1",
+    "pos": 977050,
+    "id": "474097",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 447003,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "1553174830"
+    ]
+  },
+  "GRCh37_1_977089_G_A": {
+    "chrom": "1",
+    "pos": 977089,
+    "id": "775481",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 776987,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977156_CCGGCCAGTGCCAGGGTCGAGGTGGGCGGCTCCCCCGGGGGAGGGCTG_C": {
+    "chrom": "1",
+    "pos": 977156,
+    "id": "679581",
+    "ref": "CCGGCCAGTGCCAGGGTCGAGGTGGGCGGCTCCCCCGGGGGAGGGCTG",
+    "alt": "C",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 656917,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977203_G_C": {
+    "chrom": "1",
+    "pos": 977203,
+    "id": "677945",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 656911,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977329_G_A": {
+    "chrom": "1",
+    "pos": 977329,
+    "id": "786714",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 778711,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977329_GT_AC": {
+    "chrom": "1",
+    "pos": 977329,
+    "id": "541194",
+    "ref": "GT",
+    "alt": "AC",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514924,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": [
+      "1553174921"
+    ]
+  },
+  "GRCh37_1_977330_T_C": {
+    "chrom": "1",
+    "pos": 977330,
+    "id": "128292",
+    "ref": "T",
+    "alt": "C",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 133741,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": [
+      "2799066"
+    ]
+  },
+  "GRCh37_1_977346_G_A": {
+    "chrom": "1",
+    "pos": 977346,
+    "id": "541206",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514936,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "138841641"
+    ]
+  },
+  "GRCh37_1_977356_C_T": {
+    "chrom": "1",
+    "pos": 977356,
+    "id": "474098",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 447005,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "149636063"
+    ]
+  },
+  "GRCh37_1_977367_C_T": {
+    "chrom": "1",
+    "pos": 977367,
+    "id": "541201",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514872,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "368625531"
+    ]
+  },
+  "GRCh37_1_977396_G_A": {
+    "chrom": "1",
+    "pos": 977396,
+    "id": "570656",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556894,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977407_G_A": {
+    "chrom": "1",
+    "pos": 977407,
+    "id": "572023",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556814,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977433_C_G": {
+    "chrom": "1",
+    "pos": 977433,
+    "id": "644955",
+    "ref": "C",
+    "alt": "G",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626510,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001587",
+        "molecular_consequence": "nonsense"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977439_C_T": {
+    "chrom": "1",
+    "pos": 977439,
+    "id": "703293",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 690294,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977500_C_T": {
+    "chrom": "1",
+    "pos": 977500,
+    "id": "647215",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626511,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977516_T_TC": {
+    "chrom": "1",
+    "pos": 977516,
+    "id": "243038",
+    "ref": "T",
+    "alt": "TC",
+    "clnsig": "Pathogenic",
+    "old_clnsig": null,
+    "clnrevstat": "no_assertion_criteria_provided",
+    "clnrecstat": null,
+    "alleleid": 244112,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001589",
+        "molecular_consequence": "frameshift_variant"
+      }
+    ],
+    "rs": [
+      "879253788"
+    ]
+  },
+  "GRCh37_1_977538_G_A": {
+    "chrom": "1",
+    "pos": 977538,
+    "id": "767474",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 695927,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_977570_G_A": {
+    "chrom": "1",
+    "pos": 977570,
+    "id": "263159",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 249309,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": [
+      "2710876"
+    ]
+  },
+  "GRCh37_1_977780_C_T": {
+    "chrom": "1",
+    "pos": 977780,
+    "id": "677947",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 656915,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978603_CCT_C": {
+    "chrom": "1",
+    "pos": 978603,
+    "id": "263160",
+    "ref": "CCT",
+    "alt": "C",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 249310,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": [
+      "35881187"
+    ]
+  },
+  "GRCh37_1_978628_C_T": {
+    "chrom": "1",
+    "pos": 978628,
+    "id": "263161",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 249311,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "116586548"
+    ]
+  },
+  "GRCh37_1_978629_G_A": {
+    "chrom": "1",
+    "pos": 978629,
+    "id": "474099",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 447016,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "367601178"
+    ]
+  },
+  "GRCh37_1_978635_A_G": {
+    "chrom": "1",
+    "pos": 978635,
+    "id": "474100",
+    "ref": "A",
+    "alt": "G",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 446944,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "763998310"
+    ]
+  },
+  "GRCh37_1_978639_C_T": {
+    "chrom": "1",
+    "pos": 978639,
+    "id": "571178",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556524,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978645_G_A": {
+    "chrom": "1",
+    "pos": 978645,
+    "id": "646543",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626512,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978661_G_C": {
+    "chrom": "1",
+    "pos": 978661,
+    "id": "582598",
+    "ref": "G",
+    "alt": "C",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 556816,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978668_G_A": {
+    "chrom": "1",
+    "pos": 978668,
+    "id": "263162",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 249312,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "147346337"
+    ]
+  },
+  "GRCh37_1_978683_C_T": {
+    "chrom": "1",
+    "pos": 978683,
+    "id": "541184",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514934,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "759844691"
+    ]
+  },
+  "GRCh37_1_978695_G_A": {
+    "chrom": "1",
+    "pos": 978695,
+    "id": "706773",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 690295,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978734_T_C": {
+    "chrom": "1",
+    "pos": 978734,
+    "id": "704483",
+    "ref": "T",
+    "alt": "C",
+    "clnsig": "Benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 690296,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978741_G_A": {
+    "chrom": "1",
+    "pos": 978741,
+    "id": "623664",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 612490,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "776919703"
+    ]
+  },
+  "GRCh37_1_978746_C_T": {
+    "chrom": "1",
+    "pos": 978746,
+    "id": "541202",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514874,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "527601442"
+    ]
+  },
+  "GRCh37_1_978752_C_T": {
+    "chrom": "1",
+    "pos": 978752,
+    "id": "713556",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 718045,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978762_G_A": {
+    "chrom": "1",
+    "pos": 978762,
+    "id": "263163",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Benign/Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": null,
+    "alleleid": 249313,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "138288952"
+    ]
+  },
+  "GRCh37_1_978773_C_T": {
+    "chrom": "1",
+    "pos": 978773,
+    "id": "474101",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 447008,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "370615022"
+    ]
+  },
+  "GRCh37_1_978774_G_A": {
+    "chrom": "1",
+    "pos": 978774,
+    "id": "653631",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626513,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978791_C_T": {
+    "chrom": "1",
+    "pos": 978791,
+    "id": "541213",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514879,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "146185843"
+    ]
+  },
+  "GRCh37_1_978797_C_T": {
+    "chrom": "1",
+    "pos": 978797,
+    "id": "784856",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 706520,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978800_C_T": {
+    "chrom": "1",
+    "pos": 978800,
+    "id": "541214",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 514940,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001819",
+        "molecular_consequence": "synonymous_variant"
+      }
+    ],
+    "rs": [
+      "375687903"
+    ]
+  },
+  "GRCh37_1_978801_G_A": {
+    "chrom": "1",
+    "pos": 978801,
+    "id": "723752",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 731515,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978804_C_T": {
+    "chrom": "1",
+    "pos": 978804,
+    "id": "446814",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Conflicting_interpretations_of_pathogenicity",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_conflicting_interpretations",
+    "clnrecstat": null,
+    "alleleid": 440337,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": [
+      "144164397"
+    ]
+  },
+  "GRCh37_1_978814_A_C": {
+    "chrom": "1",
+    "pos": 978814,
+    "id": "660984",
+    "ref": "A",
+    "alt": "C",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626514,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978820_C_T": {
+    "chrom": "1",
+    "pos": 978820,
+    "id": "734440",
+    "ref": "C",
+    "alt": "T",
+    "clnsig": "Likely_benign",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 731516,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_978823_G_A": {
+    "chrom": "1",
+    "pos": 978823,
+    "id": "659505",
+    "ref": "G",
+    "alt": "A",
+    "clnsig": "Uncertain_significance",
+    "old_clnsig": null,
+    "clnrevstat": "criteria_provided,_single_submitter",
+    "clnrecstat": null,
+    "alleleid": 626515,
+    "gene": "AGRN",
+    "gene_id": "375790",
+    "mc": [
+      {
+        "so_id": "0001583",
+        "molecular_consequence": "missense_variant"
+      }
+    ],
+    "rs": null
+  },
+  "GRCh37_1_17331185_A_C": {
+    "chrom": "1",
+    "pos": 17331185,
+    "id": "546591",
+    "ref": "A",
+    "alt": "C",
+    "clnsig": "Likely_pathogenic",
+    "old_clnsig": [
+      "Conflicting_interpretations_of_pathogenicity"
+    ],
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": 1,
+    "alleleid": 537080,
+    "gene": "ATP13A2",
+    "gene_id": "23400",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      },
+      {
+        "so_id": "0001575",
+        "molecular_consequence": "splice_donor_variant"
+      }
+    ],
+    "rs": [
+      "758014228"
+    ]
+  },
+  "GRCh37_1_45797835_T_G": {
+    "chrom": "1",
+    "pos": 45797835,
+    "id": "135992",
+    "ref": "T",
+    "alt": "G",
+    "clnsig": "Pathogenic",
+    "old_clnsig": [
+      "Conflicting_interpretations_of_pathogenicity"
+    ],
+    "clnrevstat": "criteria_provided,_multiple_submitters,_no_conflicts",
+    "clnrecstat": 3,
+    "alleleid": 139704,
+    "gene": "MUTYH",
+    "gene_id": "4595",
+    "mc": [
+      {
+        "so_id": "0001627",
+        "molecular_consequence": "intron_variant"
+      }
+    ],
+    "rs": [
+      "587780751"
+    ]
+  }
+}

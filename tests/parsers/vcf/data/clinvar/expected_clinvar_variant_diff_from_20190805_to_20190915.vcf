@@ -1,0 +1,53 @@
+##fileformat=VCFv4.1
+##FILTER=<ID=PASS,Description="All filters passed">
+##fileDate=2019-09-15
+##source=ClinVar
+##reference=GRCh37
+##contig=<ID=1,length=249250621>
+##contig=<ID=2,length=243199373>
+##contig=<ID=3,length=198022430>
+##contig=<ID=4,length=191154276>
+##contig=<ID=5,length=180915260>
+##contig=<ID=6,length=171115067>
+##contig=<ID=7,length=159138663>
+##contig=<ID=8,length=146364022>
+##contig=<ID=9,length=141213431>
+##contig=<ID=10,length=135534747>
+##contig=<ID=11,length=135006516>
+##contig=<ID=12,length=133851895>
+##contig=<ID=13,length=115169878>
+##contig=<ID=14,length=107349540>
+##contig=<ID=15,length=102531392>
+##contig=<ID=16,length=90354753>
+##contig=<ID=17,length=81195210>
+##contig=<ID=18,length=78077248>
+##contig=<ID=19,length=59128983>
+##contig=<ID=20,length=63025520>
+##contig=<ID=21,length=48129895>
+##contig=<ID=22,length=51304566>
+##contig=<ID=X,length=155270560>
+##contig=<ID=Y,length=59373566>
+##contig=<ID=M,length=16569>
+##ID=<Description="ClinVar Variation ID">
+##INFO=<ID=ALLELEID,Number=1,Type=Integer,Description="the ClinVar Allele ID">
+##INFO=<ID=CLNREVSTAT,Number=.,Type=String,Description="ClinVar review status for the Variation ID">
+##INFO=<ID=CLNSIG,Number=.,Type=String,Description="Clinical significance for this single variant">
+##INFO=<ID=OLD_CLNSIG,Number=.,Type=String,Description="Clinical significance was deciphered and this value is the original one given by ClinVar aggregation method">
+##INFO=<ID=CLNRECSTAT,Number=1,Type=Integer,Description="3-levels stars confidence for automatic reclassfication of conflicting variants">
+##INFO=<ID=GENEINFO,Number=1,Type=String,Description="Gene(s) for the variant reported as gene symbol:gene id. The gene symbol and id are delimited by a colon (:) and each pair is delimited by a vertical bar (|)">
+##INFO=<ID=MC,Number=.,Type=String,Description="comma separated list of molecular consequence in the form of Sequence Ontology ID|molecular_consequence">
+##INFO=<ID=RS,Number=.,Type=String,Description="dbSNP ID (i.e. rs number)">
+##INFO=<ID=CLNSRCSIG,Number=.,Type=String,Description="Clinical significance for this single variant in source version">
+##INFO=<ID=CLNTGTSIG,Number=.,Type=String,Description="Clinical significance for this single variant in target version">
+##INFO=<ID=CLNBRKCHANGE,Number=.,Type=String,Description="Clinical significance change level between source and target clinvar version">
+##INFO=<ID=CLNGENE,Number=.,Type=String,Description="Retained gene to describe clinical significance">
+##INFO=<ID=CLNGENEID,Number=.,Type=String,Description="Retained gened id to describe clinical significance">
+##clinvar_source_release=20190805
+##clinvar_target_release=20190915
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+1	949523	183381	C	T	.	.	ALLELEID=181485;GENEINFO=ISG15:9636;CLNSIG=Benign;CLNREVSTAT=reviewed_by_expert_panel;MC=SO:0001587|nonsense;RS=786201005;CLNSRCSIG=Pathogenic;CLNTGTSIG=Benign;CLNBRKCHANGE=major;CLNGENE=ISG15;CLNGENEID=9636
+1	949851	475282	G	C	.	.	ALLELEID=446981;GENEINFO=ISG15:9636;CLNSIG=Likely_benign;CLNREVSTAT=criteria_provided,_single_submitter;MC=SO:0001583|missense_variant;RS=140447219;CLNSRCSIG=..;CLNTGTSIG=Likely_benign;CLNBRKCHANGE=null;CLNGENE=ISG15;CLNGENEID=9636
+1	45797835	135992	T	G	.	.	ALLELEID=139704;GENEINFO=MUTYH:4595|HPDL:84842;CLNSIG=Pathogenic;CLNREVSTAT=criteria_provided,_multiple_submitters,_no_conflicts;OLD_CLNSIG=Conflicting_interpretations_of_pathogenicity;CLNRECSTAT=3;MC=SO:0001627|intron_variant;RS=587780751;CLNSRCSIG=Conflicting_interpretations_of_pathogenicity;CLNTGTSIG=Pathogenic;CLNBRKCHANGE=major;CLNGENE=MUTYH;CLNGENEID=4595
+2	47641560	36580	A	T	.	.	ALLELEID=45242;GENEINFO=MSH2:4436;CLNSIG=Pathogenic;CLNREVSTAT=reviewed_by_expert_panel;MC=SO:0001627|intron_variant;RS=193922376;CLNSRCSIG=Conflicting_interpretations_of_pathogenicity;CLNTGTSIG=Pathogenic;CLNBRKCHANGE=major;CLNGENE=MSH2;CLNGENEID=4436
+4	84383745	128215	T	TC	.	.	ALLELEID=133672;GENEINFO=ABRAXAS1:84142|MRPS18C:51023;CLNSIG=Pathogenic;CLNREVSTAT=criteria_provided,_multiple_submitters,_no_conflicts;MC=SO:0001589|frameshift_variant;RS=587780262;CLNSRCSIG=Uncertain_significance;CLNTGTSIG=Pathogenic;CLNBRKCHANGE=major;CLNGENE=ABRAXAS1;CLNGENEID=84142
+X	153136403	9994	A	C	.	.	ALLELEID=25033;GENEINFO=L1CAM:3897;CLNSIG=Pathogenic;CLNREVSTAT=no_assertion_criteria_provided;MC=SO:0001583|missense_variant;RS=137852523;CLNSRCSIG=..;CLNTGTSIG=Pathogenic;CLNBRKCHANGE=major;CLNGENE=L1CAM;CLNGENEID=3897
