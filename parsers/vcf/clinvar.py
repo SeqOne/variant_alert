@@ -572,7 +572,7 @@ class ClinvarVCFComparator(object):
                         "name_clinvar_new": self.target_vcf.release,
                     }
                 )
-        ## This is a hot fix to deal with exception genes (until clinvcf deal with gene extraction from clinvar XML release)
+        # This is a hot fix to deal with exception genes (until clinvcf deal with gene extraction from clinvar XML release)
         for item in compared_genes:
             if item["gene_info_id"] in EXCEPTION_GENES.keys():
                 item["gene_info_id"] = EXCEPTION_GENES[item["gene_info_id"]]
