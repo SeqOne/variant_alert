@@ -572,14 +572,14 @@ class ClinvarVCFComparator(object):
                         "name_clinvar_new": self.target_vcf.release,
                     }
                 )
-        ## This is a hot fix to deal with exception genes (until clinvcf deal with gene extraction from clinvar XML release) 
+        ## This is a hot fix to deal with exception genes (until clinvcf deal with gene extraction from clinvar XML release)
         for item in compared_genes:
-            if item['gene_info_id'] in EXCEPTION_GENES.keys():
-                item['gene_info_id'] = EXCEPTION_GENES[item['gene_info_id']]
-                item['gene_info'] = EXCEPTION_GENES[item['gene_info']]   
+            if item["gene_info_id"] in EXCEPTION_GENES.keys():
+                item["gene_info_id"] = EXCEPTION_GENES[item["gene_info_id"]]
+                item["gene_info"] = EXCEPTION_GENES[item["gene_info"]]
             else:
                 pass
-                
+
         return compared_genes
 
     def write_variant_comparison(
@@ -737,11 +737,11 @@ class ClinvarVCFComparator(object):
 
         self.logger.info(f"gene comparison has been written to file {output}")
 
-    def exception_gene_check(self, gene_key : str) :
-        ## This is a hot fix to deal with exception genes (until clinvcf deal with gene extraction from clinvar XML release) 
+    def exception_gene_check(self, gene_key: str):
+        # This is a hot fix to deal with exception genes (until clinvcf deal with gene extraction from clinvar XML release)
         if gene_key in EXCEPTION_GENES.keys():
             return EXCEPTION_GENES[gene_key]
-        else: 
+        else:
             return gene_key
 
     def write_clinvarome(self, output_directory: str = os.getcwd()):
@@ -756,7 +756,7 @@ class ClinvarVCFComparator(object):
         ]
 
         output = os.path.join(
-            output_directory, f"clinvarome_{self.target_vcf.release}.tsv",
+            output_directory, f"clinvarome_{self.target_vcf.release}.tsv"
         )
         csv.register_dialect("tsv", delimiter="\t")
         self.logger.info("Opening output clinvarome file")
@@ -770,7 +770,9 @@ class ClinvarVCFComparator(object):
                 writer.writerow(
                     {
                         "gene_info_id": self.exception_gene_check(gene_key),
-                        "gene_info": self.exception_gene_check(pathogenic_genes[gene_key]["gene"]),
+                        "gene_info": self.exception_gene_check(
+                            pathogenic_genes[gene_key]["gene"]
+                        ),
                         "pathogenic_class_new": pathogenic_genes[gene_key][
                             "best_clnsig"
                         ]["clnsig"],
