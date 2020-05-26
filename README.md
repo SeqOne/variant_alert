@@ -45,6 +45,10 @@ Clinvcf extract all variants from the monthly XML release of ClinVar into a VCF 
 ## Run
 
 ```
+poetry shell
+```
+
+```
 Usage: variant-alert [OPTIONS] VCF_SOURCE_PATH VCF_TARGET_PATH COMMAND1
                      [ARGS]... [COMMAND2 [ARGS]...]...
 
