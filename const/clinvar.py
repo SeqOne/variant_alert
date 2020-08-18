@@ -141,14 +141,3 @@ CLINVAR_PATHO_STATUS_RANK = {
     "Pathogenic/Likely_pathogenic": 4.5,
     "Likely_pathogenic": 4,
 }
-
-EXCEPTION_GENES = {
-    "CCDC107": "RMRP",
-    "203260": "6023",
-    "CLASP1": "RNU4ATAC",
-    "23332": "100151683",
-    "ACTRT3": "TERC",
-    "84517": "7012",
-    "WWP2": "MIR140",
-    "11060": "406932",
-}
