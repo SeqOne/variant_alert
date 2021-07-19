@@ -1,16 +1,15 @@
-# Variant Alert! framework
-
---------------------------------------------------------------------------------
+# Variant Alert!
 
 ![logo](img/variant-alert-logo.png)
 
 ## Overview
 
-Collaborative variant interpretation databases such as ClinVar are updated weekly, resulting in changes that can impact diagnostic performance in every genetic centre worldwide. These frequent updates present at least two challenges: 
+Collaborative variant interpretation databases such as ClinVar are updated weekly, resulting in changes that can impact diagnostic performance in every genetic centre worldwide. These frequent updates present at least two challenges:
+
 - (i) Promptly integrating the most up-to-date versions to ensure the patient receives the most relevant diagnostic
 - (ii) Finding an effective way to re-interpret previous analyses when changes in databases alter interpretation results.
 
-To do so, we provide Variant Alert!, a framework to monitor every significant alteration in variant classification and gene-disease association between two versions of ClinVar database.
+To do so, we provide Variant Alert!, a tool to monitor every significant alteration in variant classification and gene-disease association between two versions of ClinVar database.
 
 **Variant Alert provide :**
 
@@ -18,37 +17,36 @@ To do so, we provide Variant Alert!, a framework to monitor every significant al
 - *compare-gene* : A tabulated file of significant change in gene-disease association
 - *clinvarome* : A list of genes with at least one pathogenic variant in ClinVar
 
-If you want to cite this work :
-> *Yauy et al.* Extension of the mendelian genome and continuous variant reinterpretation through ClinVar monitoring (2020).
+**Variant Alert** is a part of the [**Genome Alert!** framework](https://github.com/SeqOne/GenomeAlert_app) - [Website https://genomealert.univ-grenoble-alpes.fr/](https://genomealert.univ-grenoble-alpes.fr/).
 
 ## Installation
 
-**Requirements**
+### Requirements
 
 ```bash
 python > 3.6
 poetry
 ```
 
-**Install**
+### Install
 
 ```bash
 poetry install
 ```
 
-**Input recommended**
+### Input recommended
 
-We recommend to use a VCF processed from Clinvcf, as VCF from ClinVar repository is not complete.
+We recommend to use a VCF processed from ClinVCF, as VCF from ClinVar repository is not complete.
 
-Clinvcf extract all variants from the monthly XML release of ClinVar into a VCF format (https://github.com/SeqOne/clinvcf).
+ClinVCF extract all variants from the monthly XML release of ClinVar into a VCF format [https://github.com/SeqOne/clinvcf](https://github.com/SeqOne/clinvcf).
 
 ## Run
 
-```
+```bash
 poetry shell
 ```
 
-```
+```bash
 Usage: variant-alert [OPTIONS] VCF_SOURCE_PATH VCF_TARGET_PATH COMMAND1
                      [ARGS]... [COMMAND2 [ARGS]...]...
 
@@ -97,17 +95,27 @@ Commands:
 | Pathogenic                                                             	| Uncertain_significance or Conflicting_interpretations_of_pathogenicity 	| major           	|
 | Pathogenic                                                             	| Likely_pathogenic                                                      	| minor           	|
 
-
 ## Troubleshooting
 
-- *Clinvarome*: you will also need to give 2 vcf in arguments for the clinvarome function, even if it will only use the lastest.
-- *vcf output*: tsv output will take only few seconds, but print a VCF output could take 10 minutes. This option is only available for the compare-variant function.
+- *ClinVarome*: you will also need to give 2 vcf in arguments for the clinvarome function, even if it will only use the lastest.
+- *VCF output*: tsv output will take only few seconds, but print a VCF output could take 10 minutes. This option is only available for the compare-variant function.
 
---------------------------------------------------------------------------------
-*Variant Alert! is a collaboration of :* 
+## How to cite
 
-[![SeqOne](img/logo-seqone.png)](https://seq.one/) 
+If you use a tool of the Genome Alert! framework, please cite:
+> Yauy et al., Genome Alert!: a standardized procedure for genomic variant reinterpretation and automated genotype-phenotype reassessment in clinical routine. medRxiv (2021). [https://doi.org/10.1101/2021.07.13.21260422
+](https://www.medrxiv.org/content/10.1101/2021.07.13.21260422v1)
 
-[![Université Grenoble Alpes](img/logo-uga.png)](https://iab.univ-grenoble-alpes.fr/) 
+## License
+
+**Variant Alert!** is licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE) for the full license text.
+
+## Misc
+
+*Variant Alert! is a part of the [**Genome Alert!** framework](https://github.com/SeqOne/GenomeAlert_app), a collaboration of :
+
+[![SeqOne](img/logo-seqone.png)](https://seq.one/)
+
+[![Université Grenoble Alpes](img/logo-uga.png)](https://iab.univ-grenoble-alpes.fr/)
 
 [![CHU de Rouen](img/logo-CHU.png)](https://www.chu-rouen.fr/service/service-de-genetique/)
